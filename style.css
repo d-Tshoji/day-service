@@ -1,0 +1,125 @@
+@charset "UTF-8";
+body {
+  margin: 0px; }
+
+.header {
+  z-index: 1;
+  background: white;
+  width: 1920px;
+  height: 100px;
+  display: flex;
+  font-family: "Noto Sans";
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.3); }
+  .header__logo {
+    font-size: 27px;
+    font-weight: bold;
+    margin: 20px 464px 20px 380px;
+    border: 2px solid blue; }
+  .header__logo p {
+    margin: 12px; }
+  .header__navi {
+    display: flex;
+    border: 1px solid red; }
+    .header__navi--item {
+      color: #878787;
+      font-size: 15px;
+      font-weight: bold;
+      border: 2px solid blue;
+      padding: 20px; }
+
+/*縺薙％縺九ｉ繝｡繧､繝ｳ*/
+.main {
+  border: 1px solid gray;
+  width: 1920px;
+  height: 1080px;
+  position: relative; }
+  .main__img {
+    width: 100%; }
+  .main__logo {
+    position: absolute;
+    color: white;
+    font-family: "MS PMincho";
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0; }
+  .main__info {
+    position: absolute;
+    font-family: "Noto Sans";
+    font-size: 19px;
+    padding: 12px 74px;
+    background: #FACB32;
+    color: #fff;
+    border-style: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    top: 700px;
+    left: 690px; }
+  .main__info:hover {
+    background: #FABE00;
+    color: #fff; }
+  .main__document {
+    position: absolute;
+    font-family: "Noto Sans";
+    font-size: 19px;
+    padding: 12px 87px;
+    background: #FACB32;
+    color: #fff;
+    border-style: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    top: 700px;
+    left: 980px; }
+  .main__document:hover {
+    background: #FABE00;
+    color: #fff; }
+
+/*縺薙％縺ｾ縺ｧ繝｡繧､繝ｳ*/
+.news {
+  width: 1920px;
+  height: 762px;
+  position: relative; }
+  .news__title {
+    width: 1920px;
+    height: 139px;
+    border: 1px solid lightblue; }
+  .news__title h2 {
+    width: 128px;
+    height: 43px;
+    margin: 43px 896px 53px 896px;
+    font-family: "Noto Sans";
+    font-size: 32px;
+    color: #6A6A6A;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid green; }
+
+.about {
+  width: 1920px;
+  height: 510px; }
+
+.footer {
+  background: black;
+  width: 1920px;
+  height: 367px;
+  color: white; }
+
+.br {
+  display: block; }
+
+/*# sourceMappingURL=style.css.map */

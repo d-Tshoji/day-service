@@ -22,13 +22,11 @@
         top: 50%;
         left: 50%;
         -ms-transform: translate(-50%,-50%);
-        -webkit-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
         margin:0;
     }
 
     &__button button {
-        font-family: "Noto Sans";
         font-size: 19px;
         background: #FACB32;
         color: #fff;
@@ -36,16 +34,14 @@
 
         box-shadow: 0px 1px 3px rgba(0,0,0, 0.5);
         -moz-box-shadow: 0px 1px 3px rgba(0,0,0, 0.5);
-        -webkit-box-shadow: 0px 1px 3px rgba(0,0,0, 0.5);
 
         -moz-border-radius: 3px;
-        -webkit-border-radius: 3px;
         border-radius: 3px;
     }
     &__button button:hover {
             background: #FABE00;
             color: #fff;
-        }
+    }
     .button-info {
         position: absolute;
         padding: 12px 74px;

@@ -10,13 +10,30 @@
         height: 43px;
         margin: 43px 896px 53px 896px;
 
-        font-family: "Noto Sans";
         font-size: 32px;
         color: #6A6A6A;
         text-align: center;
         font-weight: bold;
         
         border: 1px solid green;
+    }
+
+    &__tab {
+        display: flex;
+        width: 1000px;
+        height: 45px;
+        margin: 0 auto;
+        border: 1px solid black;
+        &-item {
+            width: 320px;
+            height: 45px;
+            margin-right: 20px;
+            //background: #C30D23;
+            background: #F2F2F2;
+            border: 1px solid purple;
+            
+        }
+
     }
 
 }

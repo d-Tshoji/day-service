@@ -1,44 +1,5 @@
-body{
-    margin: 0px;
-}
+// _main.scss
 
-
-.header{
-    z-index: 1;
-
-    background: white;
-    width: 1920px;
-    height: 100px;
-    display: flex;
-    font-family: "Noto Sans";
-
-    box-shadow: 0px 10px 6px rgba(0,0,0, 0.3);
-    -moz-box-shadow: 0px 10px 6px rgba(0,0,0, 0.3);
-    -webkit-box-shadow: 0px 10px 6px rgba(0,0,0, 0.3);
-    
-
-    &__logo {
-        font-size: 27px;
-        font-weight: bold;
-        margin: 20px 464px 20px 380px;
-        padding: 12px;
-        border: 2px solid green;
-    }
-
-    &__navi {
-        display: flex;
-        border: 1px solid red;
-         .navi-item {
-            color: #878787;
-            font-size: 15px;
-            font-weight: bold;
-            border: 2px solid blue;
-            padding: 20px;
-        }
-    }
-}
-
-/*ここからメイン*/
 .main{
     border: 1px solid gray;
     width: 1920px;
@@ -49,7 +10,6 @@ body{
         width: 100%;
     }
 
-    //メインロゴ
     &__logo {
         position: absolute;
 
@@ -98,43 +58,4 @@ body{
         top: 700px;
         left: 980px;
     }
-}
-/*ここまでメイン*/
-
-.news {
-    width: 1920px;
-    height: 762px;
-    position: relative;
-
-    &__title {
-        width: 128px;
-        height: 43px;
-        margin: 43px 896px 53px 896px;
-
-        font-family: "Noto Sans";
-        font-size: 32px;
-        color: #6A6A6A;
-        text-align: center;
-        font-weight: bold;
-        
-        border: 1px solid green;
-    }
-
-}
-
-.about {
-    width: 1920px;
-    height: 510px;
-}
-
-
-.footer {
-    background: black;
-    width: 1920px;
-    height: 367px;
-    color: white;
-}
-
-.br {
-    display: block;
 }

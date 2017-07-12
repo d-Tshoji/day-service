@@ -1,0 +1,22 @@
+// _news.scss
+
+.news {
+    width: 1920px;
+    height: 762px;
+    position: relative;
+
+    &__title {
+        width: 128px;
+        height: 43px;
+        margin: 43px 896px 53px 896px;
+
+        font-family: "Noto Sans";
+        font-size: 32px;
+        color: #6A6A6A;
+        text-align: center;
+        font-weight: bold;
+        
+        border: 1px solid green;
+    }
+
+}

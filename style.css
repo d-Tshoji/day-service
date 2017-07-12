@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin: 0px; }
 
@@ -28,7 +27,6 @@ body {
       border: 2px solid blue;
       padding: 20px; }
 
-/*縺薙％縺九ｉ繝｡繧､繝ｳ*/
 .main {
   border: 1px solid gray;
   width: 1920px;
@@ -75,7 +73,6 @@ body {
     top: 700px;
     left: 980px; }
 
-/*縺薙％縺ｾ縺ｧ繝｡繧､繝ｳ*/
 .news {
   width: 1920px;
   height: 762px;
@@ -100,8 +97,5 @@ body {
   width: 1920px;
   height: 367px;
   color: white; }
-
-.br {
-  display: block; }
 
 /*# sourceMappingURL=style.css.map */

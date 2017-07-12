@@ -21,17 +21,14 @@ body{
         font-size: 27px;
         font-weight: bold;
         margin: 20px 464px 20px 380px;
-        border: 2px solid blue;
-    }
-
-    &__logo p {
-        margin: 12px;
+        padding: 12px;
+        border: 2px solid green;
     }
 
     &__navi {
         display: flex;
         border: 1px solid red;
-         &--item {
+         .navi-item {
             color: #878787;
             font-size: 15px;
             font-weight: bold;
@@ -70,12 +67,9 @@ body{
         margin:0;
     }
 
-    &__info {
-        position: absolute;
-
+    &__button button {
         font-family: "Noto Sans";
         font-size: 19px;
-        padding: 12px 74px;
         background: #FACB32;
         color: #fff;
         border-style: none;
@@ -87,39 +81,22 @@ body{
         -moz-border-radius: 3px;
         -webkit-border-radius: 3px;
         border-radius: 3px;
-
+    }
+    &__button button:hover {
+            background: #FABE00;
+            color: #fff;
+        }
+    .button-info {
+        position: absolute;
+        padding: 12px 74px;
         top: 700px;
         left: 690px;
     }
-    &__info:hover {
-        background: #FABE00;
-        color: #fff;
-    }
-
-    &__document {
+    .button-document {
         position: absolute;
-
-        font-family: "Noto Sans";
-        font-size: 19px;
         padding: 12px 87px;
-        background: #FACB32;
-        color: #fff;
-        border-style: none;
-
-        box-shadow: 0px 1px 3px rgba(0,0,0, 0.5);
-        -moz-box-shadow: 0px 1px 3px rgba(0,0,0, 0.5);
-        -webkit-box-shadow: 0px 1px 3px rgba(0,0,0, 0.5);
-
-        -moz-border-radius: 3px;
-        -webkit-border-radius: 3px;
-        border-radius: 3px;
-
         top: 700px;
         left: 980px;
-    }
-    &__document:hover {
-        background: #FABE00;
-        color: #fff;
     }
 }
 /*ここまでメイン*/
@@ -130,11 +107,6 @@ body{
     position: relative;
 
     &__title {
-        width: 1920px;
-        height: 139px;
-        border: 1px solid lightblue;
-    }
-    &__title h2 {
         width: 128px;
         height: 43px;
         margin: 43px 896px 53px 896px;

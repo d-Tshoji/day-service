@@ -16,13 +16,12 @@ body {
     font-size: 27px;
     font-weight: bold;
     margin: 20px 464px 20px 380px;
-    border: 2px solid blue; }
-  .header__logo p {
-    margin: 12px; }
+    padding: 12px;
+    border: 2px solid green; }
   .header__navi {
     display: flex;
     border: 1px solid red; }
-    .header__navi--item {
+    .header__navi .navi-item {
       color: #878787;
       font-size: 15px;
       font-weight: bold;
@@ -50,11 +49,9 @@ body {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     margin: 0; }
-  .main__info {
-    position: absolute;
+  .main__button button {
     font-family: "Noto Sans";
     font-size: 19px;
-    padding: 12px 74px;
     background: #FACB32;
     color: #fff;
     border-style: none;
@@ -63,31 +60,20 @@ body {
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-    border-radius: 3px;
+    border-radius: 3px; }
+  .main__button button:hover {
+    background: #FABE00;
+    color: #fff; }
+  .main .button-info {
+    position: absolute;
+    padding: 12px 74px;
     top: 700px;
     left: 690px; }
-  .main__info:hover {
-    background: #FABE00;
-    color: #fff; }
-  .main__document {
+  .main .button-document {
     position: absolute;
-    font-family: "Noto Sans";
-    font-size: 19px;
     padding: 12px 87px;
-    background: #FACB32;
-    color: #fff;
-    border-style: none;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
     top: 700px;
     left: 980px; }
-  .main__document:hover {
-    background: #FABE00;
-    color: #fff; }
 
 /*縺薙％縺ｾ縺ｧ繝｡繧､繝ｳ*/
 .news {
@@ -95,10 +81,6 @@ body {
   height: 762px;
   position: relative; }
   .news__title {
-    width: 1920px;
-    height: 139px;
-    border: 1px solid lightblue; }
-  .news__title h2 {
     width: 128px;
     height: 43px;
     margin: 43px 896px 53px 896px;

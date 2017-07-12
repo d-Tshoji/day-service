@@ -2,7 +2,6 @@ doctype html
 html(lang="ja")
   head
     meta(charset="utf-8")
-    //style(src="css/style.css")
     link(href="style.css" rel="stylesheet")
     title index
   body
@@ -11,12 +10,13 @@ html(lang="ja")
     .main
       img(src="img/hero-img.jpg").main__img
       h2.main__logo いつもと違う<span class="br">いつもの毎日へ</span>
-      button.main__info お問い合わせ
-      button.main__document 資料請求
+      .main__button
+        button.button-info お問い合わせ
+        button.button-document 資料請求
         
 
     .news
-      .news__title: h2 新着情報
+      h2.news__title 新着情報
       .news__tab
         .news__tab--item
         .news__tab--item

@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
     "gulp-imagemin": "^3.3.0",
     "gulp-pug": "^3.3.0",

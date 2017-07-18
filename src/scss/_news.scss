@@ -4,6 +4,7 @@
     width: 1920px;
     height: 762px;
     position: relative;
+    background: #FAFAFA;
 
     &__title {
         width: 128px;
@@ -15,7 +16,7 @@
         text-align: center;
         font-weight: bold;
         
-        border: 1px solid green;
+        //border: 1px solid green;
     }
 
     &__tab {
@@ -23,17 +24,32 @@
         width: 1000px;
         height: 45px;
         margin: 0 auto;
-        border: 1px solid black;
+        margin-bottom: 40px;
+        background: #FAFAFA;
+                border: 1px solid green;
         &-item {
             width: 320px;
             height: 45px;
             margin-right: 20px;
-            //background: #C30D23;
+            color: #6A6A6A;
             background: #F2F2F2;
-            border: 1px solid purple;
-            
         }
-
+        &-item p {
+            font-size: 13px;
+            font-weight: bold;
+            text-align: center;
+        }
+        &-color {
+            background: #C30D23;
+            color: #fff;
+        }
+    }
+    &__contents{
+        border: 1px solid green;
+        width: 1000px;
+        height: 380px;
+        margin: 0 auto;
+        background: #fff;
     }
 
 }

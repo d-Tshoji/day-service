@@ -14,20 +14,16 @@ body {
     font-size: 27px;
     font-weight: bold;
     margin: 20px 464px 20px 380px;
-    padding: 12px;
-    border: 2px solid green; }
+    padding: 12px; }
   .header__navi {
-    display: flex;
-    border: 1px solid red; }
+    display: flex; }
     .header__navi .navi-item {
       color: #878787;
       font-size: 15px;
       font-weight: bold;
-      border: 2px solid blue;
       padding: 20px; }
 
 .main {
-  border: 1px solid gray;
   width: 1920px;
   height: 1080px;
   position: relative; }
@@ -71,7 +67,8 @@ body {
 .news {
   width: 1920px;
   height: 762px;
-  position: relative; }
+  position: relative;
+  background: #FAFAFA; }
   .news__title {
     width: 128px;
     height: 43px;
@@ -79,20 +76,34 @@ body {
     font-size: 32px;
     color: #6A6A6A;
     text-align: center;
-    font-weight: bold;
-    border: 1px solid green; }
+    font-weight: bold; }
   .news__tab {
     display: flex;
     width: 1000px;
     height: 45px;
     margin: 0 auto;
-    border: 1px solid black; }
+    margin-bottom: 40px;
+    background: #FAFAFA;
+    border: 1px solid green; }
     .news__tab-item {
       width: 320px;
       height: 45px;
       margin-right: 20px;
-      background: #F2F2F2;
-      border: 1px solid purple; }
+      color: #6A6A6A;
+      background: #F2F2F2; }
+    .news__tab-item li {
+      font-size: 13px;
+      font-weight: bold;
+      text-align: center; }
+    .news__tab-color {
+      background: #C30D23;
+      color: #fff; }
+  .news__contents {
+    border: 1px solid green;
+    width: 1000px;
+    height: 380px;
+    margin: 0 auto;
+    background: #fff; }
 
 .about {
   width: 1920px;

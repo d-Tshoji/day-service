@@ -4,7 +4,7 @@
     width: 1920px;
     height: 762px;
     position: relative;
-    background: #FAFAFA;
+    background-color: #FAFAFA;
 
     &__title {
         width: 128px;
@@ -20,27 +20,34 @@
     }
 
     &__tab {
-        display: flex;
+        display: table;
+        table-layout: fixed;
+        text-align: center;
         width: 1000px;
-        height: 45px;
+
         margin: 0 auto;
         margin-bottom: 40px;
-        background: #FAFAFA;
+        background-color: #FAFAFA;
                 border: 1px solid green;
         &-item {
-            width: 320px;
-            height: 45px;
-            margin-right: 20px;
-            color: #6A6A6A;
-            background: #F2F2F2;
-        }
-        &-item p {
             font-size: 13px;
             font-weight: bold;
-            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+
+            //width: 320px;
+            height: 45px;
+            //margin-right: 20px;
+            color: #6A6A6A;
+            background-color: #F2F2F2;
         }
+        //&-item li {
+        //    font-size: 13px;
+        //    font-weight: bold;
+        //    text-align: center;
+        //}
         &-color {
-            background: #C30D23;
+            background-color: #C30D23;
             color: #fff;
         }
     }

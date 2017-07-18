@@ -4,7 +4,7 @@ body {
 
 .header {
   z-index: 1;
-  background: white;
+  background-color: white;
   width: 1920px;
   height: 100px;
   display: flex;
@@ -43,7 +43,7 @@ body {
     margin: 0; }
   .main__button button {
     font-size: 19px;
-    background: #FACB32;
+    background-color: #FACB32;
     color: #fff;
     border-style: none;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
@@ -51,7 +51,7 @@ body {
     -moz-border-radius: 3px;
     border-radius: 3px; }
   .main__button button:hover {
-    background: #FABE00;
+    background-color: #FABE00;
     color: #fff; }
   .main .button-info {
     position: absolute;
@@ -68,7 +68,7 @@ body {
   width: 1920px;
   height: 762px;
   position: relative;
-  background: #FAFAFA; }
+  background-color: #FAFAFA; }
   .news__title {
     width: 128px;
     height: 43px;
@@ -78,25 +78,24 @@ body {
     text-align: center;
     font-weight: bold; }
   .news__tab {
-    display: flex;
+    display: table;
+    table-layout: fixed;
+    text-align: center;
     width: 1000px;
-    height: 45px;
     margin: 0 auto;
     margin-bottom: 40px;
-    background: #FAFAFA;
+    background-color: #FAFAFA;
     border: 1px solid green; }
     .news__tab-item {
-      width: 320px;
-      height: 45px;
-      margin-right: 20px;
-      color: #6A6A6A;
-      background: #F2F2F2; }
-    .news__tab-item li {
       font-size: 13px;
       font-weight: bold;
-      text-align: center; }
+      display: table-cell;
+      vertical-align: middle;
+      height: 45px;
+      color: #6A6A6A;
+      background-color: #F2F2F2; }
     .news__tab-color {
-      background: #C30D23;
+      background-color: #C30D23;
       color: #fff; }
   .news__contents {
     border: 1px solid green;
@@ -110,7 +109,7 @@ body {
   height: 510px; }
 
 .footer {
-  background: black;
+  background-color: black;
   width: 1920px;
   height: 367px;
   color: white; }

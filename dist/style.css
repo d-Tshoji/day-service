@@ -6,6 +6,9 @@ ul {
   margin: 0;
   padding: 0; }
 
+.br {
+  display: block; }
+
 .header {
   z-index: 1;
   background-color: white;
@@ -87,8 +90,7 @@ ul {
     text-align: center;
     width: 1000px;
     margin: 0 auto;
-    margin-bottom: 40px;
-    border: 1px solid green; }
+    margin-bottom: 40px; }
     .news__tab-item {
       font-size: 13px;
       font-weight: bold;
@@ -103,7 +105,6 @@ ul {
       color: #fff; }
   .news__contents {
     display: flex;
-    border: 1px solid green;
     width: 1000px;
     height: 380px;
     margin: 0 auto;
@@ -129,9 +130,12 @@ ul {
         width: 70px;
         height: 20px; }
     .news__contents-article {
-      border: 1px solid pink;
-      width: 500px;
-      height: 80px; }
+      margin: 0;
+      color: #95989A;
+      font-size: 18px;
+      padding: 13px 0px 13px 15px;
+      width: 700px;
+      height: 51px; }
 
 .about {
   width: 1920px;

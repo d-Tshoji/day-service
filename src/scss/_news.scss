@@ -27,7 +27,7 @@
 
         margin: 0 auto;
         margin-bottom: 40px;
-                border: 1px solid green;
+                //border: 1px solid green;
         &-item {
             font-size: 13px;
             font-weight: bold;
@@ -45,14 +45,14 @@
     }
     &__contents{
         display:flex;
-        border: 1px solid green;
         width: 1000px;
         height: 380px;
         margin: 0 auto;
         background: #fff;
+            //border: 1px solid green;
         &-item {
             display:flex;
-            //border: 1px solid limegreen;
+                //border: 1px solid limegreen;
             width: 290px;
             height: 80px;
             &-day{
@@ -77,9 +77,13 @@
         }
 
         &-article {
-            border: 1px solid pink;
-            width: 500px;
-            height: 80px;
+            margin: 0;
+            color: #95989A;
+            font-size: 18px;
+            padding: 13px 0px 13px 15px;
+            width: 700px;
+            height: 51px;
+                //border: 1px solid pink;
         }
 
 

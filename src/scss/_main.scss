@@ -5,14 +5,10 @@
     width: 1920px;
     height: 1080px;
     position: relative;
-
-    &__img {
-        width: 100%;
-    }
+    background-image: url("img/hero-img.jpg");
 
     &__logo {
         position: absolute;
-
         color: white;
         font-family: "MS PMincho";
         font-size: 100px;

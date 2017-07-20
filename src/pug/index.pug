@@ -2,7 +2,6 @@ extend _base
 
 block content
   .main
-    img(src="img/hero-img.jpg").main__img
     h2.main__logo いつもと違う<span class="br">いつもの毎日へ</span>
     .main__button
       button.button-info お問い合わせ
@@ -16,7 +15,7 @@ block content
       li.news__tab-item トピック
 
     .news__contents
-      - for (var i = 0; i < 3; i++){
+      - for (var i = 0; i < 5; i++){
       .news__contents-frame
         .news__contents-item
           p.news__contents-item-day 2017.06.11

@@ -143,11 +143,25 @@ ul {
       height: 51px; }
 
 .about {
+  display: flex;
   width: 1920px;
-  height: 510px; }
+  height: 510px;
+  border: 1px solid red; }
+  .about__contents {
+    margin-left: auto;
+    width: 832px;
+    height: 100%;
+    color: red;
+    border: 1px solid blue; }
+  .about__image {
+    width: 960px;
+    height: 100%;
+    background-image: url("img/about-img.jpg");
+    border: 1px solid magenta; }
 
 .footer {
-  background-color: black;
+  background-color: #444444;
   width: 1920px;
   height: 367px;
-  color: white; }
+  color: white;
+  border: 1px solid #444444; }

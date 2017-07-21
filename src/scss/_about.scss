@@ -4,20 +4,43 @@
     display: flex;
     width: 1920px;
     height: 510px;
-        border: 1px solid red;
+        //border: 1px solid red;
     &__contents {
         margin-left: auto;
         width: 832px;
         height: 100%;
-        color:red;
-            border: 1px solid blue;
+        color: black;
+        position: relative;
+            //border: 1px solid blue;
     }
+    &__heading {
+        position: absolute;
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
+        top: 125px;
+        left: 195px;
+    }  
 
+    &__text {
+        position: absolute;
+        width: 442px;
+        height: 139px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: black;
+
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+            //border: 1px solid green;
+    }
     &__image {
         width: 960px;
         height: 100%;
         background-image: url("img/about-img.jpg");
-            border: 1px solid magenta;
+            //border: 1px solid magenta;
     }
 
 }

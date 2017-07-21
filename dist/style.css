@@ -145,19 +145,35 @@ ul {
 .about {
   display: flex;
   width: 1920px;
-  height: 510px;
-  border: 1px solid red; }
+  height: 510px; }
   .about__contents {
     margin-left: auto;
     width: 832px;
     height: 100%;
-    color: red;
-    border: 1px solid blue; }
+    color: black;
+    position: relative; }
+  .about__heading {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    top: 125px;
+    left: 195px; }
+  .about__text {
+    position: absolute;
+    width: 442px;
+    height: 139px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: black;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
   .about__image {
     width: 960px;
     height: 100%;
-    background-image: url("img/about-img.jpg");
-    border: 1px solid magenta; }
+    background-image: url("img/about-img.jpg"); }
 
 .footer {
   background-color: #444444;

@@ -15,14 +15,13 @@ block content
       li.news__tab-item トピック
 
     .news__contents
-      - for (var i = 0; i < 5; i++){
-      .news__contents-frame
-        .news__contents-item
-          p.news__contents-item-day 2017.06.11
-          p.news__contents-item-announce お知らせ
-        p.news__contents-article 内覧会・体験会「6月15日（土）」まずはお電話でご予約ください！！ _
-                <span class="br">電話:1234-567-890</span>
-      - }
+      - var i = 3
+        while i--
+          .news__contents-frame
+            .news__contents-item
+              p.news__contents-item-day 2017.06.11
+              p.news__contents-item-announce お知らせ
+            p.news__contents-article 内覧会・体験会「6月15日（土）」まずはお電話でご予約ください！！<span class="br">電話:1234-567-890</span>
 
   .about
     .about__contents

@@ -22,9 +22,9 @@ ul {
     font-weight: bold;
     margin: 20px 464px 20px 380px;
     padding: 12px; }
-  .header__navi {
+  .header__nav {
     display: flex; }
-    .header__navi .navi-item {
+    .header__nav .nav-item {
       color: #878787;
       font-size: 15px;
       font-weight: bold;
@@ -110,10 +110,12 @@ ul {
       display: flex;
       width: 100%;
       height: 80px;
-      margin-bottom: 37px; }
+      margin-bottom: 37px;
+      border: 1px solid aqua; }
     .news__contents-item {
       display: flex;
-      width: 290px; }
+      width: 290px;
+      border: 1px solid limegreen; }
       .news__contents-item-day {
         margin-top: 0;
         font-size: 15px;
@@ -137,7 +139,8 @@ ul {
       font-weight: bold;
       padding: 13px 0px 13px 15px;
       width: 700px;
-      height: 51px; }
+      height: 51px;
+      border: 1px solid pink; }
 
 .about {
   display: flex;
@@ -153,7 +156,7 @@ ul {
     position: absolute;
     font-size: 30px;
     font-weight: bold;
-    color: aqua;
+    color: black;
     top: 125px;
     left: 195px; }
   .about__text {
@@ -182,22 +185,22 @@ ul {
     height: 65px;
     margin: 0 auto;
     border-bottom: 1px solid #9A9A9A; }
-  .footer__navi {
+  .footer__nav {
     width: 1200px;
     height: 210px;
     margin: 0 auto;
     position: relative; }
-    .footer__navi-frame {
+    .footer__nav-frame {
       position: absolute;
       display: flex;
       top: 49px;
       left: 45px; }
-    .footer__navi-item {
+    .footer__nav-item {
       width: 118px;
       height: 26px;
       margin-right: 125px;
       padding-top: 6px; }
-    .footer__navi-item p {
+    .footer__nav-item p {
       display: table-cell;
       font-size: 17px; }
   .footer__bottom {

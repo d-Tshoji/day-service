@@ -7,12 +7,13 @@
   &__title {
     width: 128px;
     height: 43px;
-    margin: 43px 896px 53px 896px;
+    margin: 0px 896px 0px 896px;
+    padding: 43px 0px 53px 0px;
     font-size: 32px;
     color: #6A6A6A;
     text-align: center;
     font-weight: bold;
-     //border: 1px solids green;
+     //border: 10px solids green;
   }
   &__tab {
     display: table;

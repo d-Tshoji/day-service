@@ -1,34 +1,27 @@
 // _header.scss
-
-.header{
-    z-index: 1;
-
-    background-color: white;
-    width: 1920px;
-    height: 100px;
+.header {
+  z-index: 1;
+  background-color: white;
+  width: 1920px;
+  height: 100px;
+  display: flex;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.3);
+  &__logo {
+    font-size: 27px;
+    font-weight: bold;
+    margin: 20px 464px 20px 380px;
+    padding: 12px;
+     //border: 2px solid green;
+  }
+  &__nav {
     display: flex;
-
-    box-shadow: 0px 10px 6px rgba(0,0,0, 0.3);
-    -moz-box-shadow: 0px 10px 6px rgba(0,0,0, 0.3);
-    
-
-    &__logo {
-        font-size: 27px;
-        font-weight: bold;
-        margin: 20px 464px 20px 380px;
-        padding: 12px;
-        //border: 2px solid green;
+     //border: 1px solid red;
+    .nav-item {
+      color: #878787;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 20px;
+       //border: 2px solid blue;
     }
-
-    &__nav {
-        display: flex;
-        //border: 1px solid red;
-         .nav-item {
-            color: #878787;
-            font-size: 15px;
-            font-weight: bold;
-            //border: 2px solid blue;
-            padding: 20px;
-        }
-    }
+  }
 }

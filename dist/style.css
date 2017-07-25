@@ -15,8 +15,7 @@ ul {
   width: 1920px;
   height: 100px;
   display: flex;
-  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.3); }
   .header__logo {
     font-size: 27px;
     font-weight: bold;
@@ -110,12 +109,10 @@ ul {
       display: flex;
       width: 100%;
       height: 80px;
-      margin-bottom: 37px;
-      border: 1px solid aqua; }
+      margin-bottom: 37px; }
     .news__contents-item {
       display: flex;
-      width: 290px;
-      border: 1px solid limegreen; }
+      width: 290px; }
       .news__contents-item-day {
         margin-top: 0;
         font-size: 15px;
@@ -139,8 +136,7 @@ ul {
       font-weight: bold;
       padding: 13px 0px 13px 15px;
       width: 700px;
-      height: 51px;
-      border: 1px solid pink; }
+      height: 51px; }
 
 .about {
   display: flex;

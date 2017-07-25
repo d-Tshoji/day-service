@@ -1,49 +1,44 @@
 // _main.scss
-
-.main{
+.main {
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  background-image: url("img/hero-img.jpg");
     //border: 1px solid red;
-    width: 1920px;
-    height: 1080px;
-    position: relative;
-    background-image: url("img/hero-img.jpg");
-
-    &__logo {
-        position: absolute;
-        color: white;
-        font-family: "MS PMincho";
-        font-size: 100px;
-        text-align: center;
-        text-shadow: 0px 3px 6px rgba(0,0,0, 0.5);
-
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        margin:0;
-    }
-
-    &__button button {
-        font-size: 19px;
-        background-color: #FACB32;
-        color: #fff;
-        border-style: none;
-
-        box-shadow: 0px 1px 3px rgba(0,0,0, 0.5);
-        border-radius: 3px;
-    }
-    &__button button:hover {
-            background-color: #FABE00;
-            color: #fff;
-    }
-    .button-info {
-        position: absolute;
-        padding: 12px 74px;
-        top: 700px;
-        left: 690px;
-    }
-    .button-document {
-        position: absolute;
-        padding: 12px 87px;
-        top: 700px;
-        left: 980px;
-    }
+  &__logo {
+    position: absolute;
+    color: white;
+    font-family: "MS PMincho";
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+  &__button button {
+    font-size: 19px;
+    background-color: #FACB32;
+    color: #fff;
+    border-style: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+  }
+  &__button button:hover {
+    background-color: #FABE00;
+    color: #fff;
+  }
+  .button-info {
+    position: absolute;
+    padding: 12px 74px;
+    top: 700px;
+    left: 690px;
+  }
+  .button-document {
+    position: absolute;
+    padding: 12px 87px;
+    top: 700px;
+    left: 980px;
+  }
 }

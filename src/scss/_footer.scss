@@ -1,53 +1,50 @@
 // _footer.scss
-
 .footer {
-    background-color: #444444;
-    width: 1920px;
-    height: 367px;
-    color: white;
-        //border: 1px solid red;
-    &__top {
-        width: 1200px;
-        height: 65px;
-        margin: 0 auto;
-            border-bottom: 1px solid #9A9A9A;
+  background-color: #444444;
+  width: 1920px;
+  height: 367px;
+  color: white;
+   //border: 1px solid red;
+  &__top {
+    width: 1200px;
+    height: 65px;
+    margin: 0 auto;
+    border-bottom: 1px solid #9A9A9A;
+  }
+  &__nav {
+    width: 1200px;
+    height: 210px;
+    margin: 0 auto;
+    position: relative;
+     //border: 1px solid aqua;
+    &-frame {
+      position: absolute;
+      display: flex;
+      top: 49px;
+      left: 45px;
+       //border: 1px solid lightgreen;
     }
-    &__nav {
-        width: 1200px;
-        height: 210px;
-        margin: 0 auto;
-        position: relative;
-            //border: 1px solid aqua;
-        &-frame {
-            position: absolute;            
-            display: flex;
-            top: 49px;
-            left: 45px;
-                //border: 1px solid lightgreen;
-        }
-        &-item {
-            width: 118px;
-            height: 26px;
-            margin-right: 125px;
-            padding-top: 6px;
-                //border: 1px solid royalblue;
-        }
-        &-item p {
-            display: table-cell;
-            font-size: 17px;
-        }
-
+    &-item {
+      width: 118px;
+      height: 26px;
+      margin-right: 125px;
+      padding-top: 6px;
+       //border: 1px solid royalblue;
     }
-    &__bottom {
-        width: 1200px;
-        height: 90px;
-        margin: 0 auto;
-            border-top: 1px solid #9A9A9A;
-        &-toplink {
-            font-size: 13px;
-            color: #BBBBBB;            
-            margin: 37px 0px 0px 45px;
-        }
-        
+    &-item p {
+      display: table-cell;
+      font-size: 17px;
     }
+  }
+  &__bottom {
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #9A9A9A;
+    &-toplink {
+      font-size: 13px;
+      color: #BBBBBB;
+      margin: 37px 0px 0px 45px;
+    }
+  }
 }

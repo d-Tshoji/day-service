@@ -17,10 +17,20 @@
     display: flex;
      //border: 1px solid red;
     .nav-item {
-      color: #878787;
+      //color: #878787;
       font-size: 15px;
       font-weight: bold;
       padding: 20px;
+      &:link{
+        color: #878787;
+        text-decoration: none;
+      }
+      &:visited {
+        color: #878787;
+      }
+      &:hover{
+        color: #5791fb;
+      }
        //border: 2px solid blue;
     }
   }

@@ -29,6 +29,17 @@
       height: 26px;
       margin-right: 125px;
       padding-top: 6px;
+
+      &:link{
+        color: #BBBBBB;
+        text-decoration: none;
+      }
+      &:visited {
+        color: #BBBBBB;
+      }
+      &:hover{
+        color: white;
+      }
        //border: 1px solid royalblue;
     }
     &-item p {

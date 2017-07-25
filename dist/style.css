@@ -24,10 +24,16 @@ ul {
   .header__nav {
     display: flex; }
     .header__nav .nav-item {
-      color: #878787;
       font-size: 15px;
       font-weight: bold;
       padding: 20px; }
+      .header__nav .nav-item:link {
+        color: #878787;
+        text-decoration: none; }
+      .header__nav .nav-item:visited {
+        color: #878787; }
+      .header__nav .nav-item:hover {
+        color: #5791fb; }
 
 .main {
   width: 1920px;
@@ -196,6 +202,13 @@ ul {
       height: 26px;
       margin-right: 125px;
       padding-top: 6px; }
+      .footer__nav-item:link {
+        color: #BBBBBB;
+        text-decoration: none; }
+      .footer__nav-item:visited {
+        color: #BBBBBB; }
+      .footer__nav-item:hover {
+        color: white; }
     .footer__nav-item p {
       display: table-cell;
       font-size: 17px; }

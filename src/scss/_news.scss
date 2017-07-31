@@ -1,4 +1,7 @@
 // _news.scss
+
+/*wide*/
+@media (min-width: 480px){
 .news {
   width: 1920px;
   height: 762px;
@@ -87,4 +90,5 @@
        //border: 1px solid pink;
     }
   }
+}
 }

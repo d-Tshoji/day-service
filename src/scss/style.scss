@@ -2,6 +2,11 @@
 body {
   margin: 0px;
   font-family: "Noto Sans", "sans-serif";
+  overflow-x: hidden;
+}
+
+p {
+    line-height: 2;
 }
 
 ul {
@@ -12,7 +17,7 @@ ul {
 .br {
   display: block;
 }
-
+@import url(../css/font-awesome.min.css);
 @import "header";
 @import "main";
 @import "news";

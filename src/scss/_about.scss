@@ -1,4 +1,7 @@
 // _about.scss
+
+/*wide*/
+@media (min-width: 480px){
 .about {
   display: flex;
   width: 1920px;
@@ -39,4 +42,5 @@
     background-image: url("img/about-img.jpg");
      //border: 1px solid magenta;
   }
+}
 }

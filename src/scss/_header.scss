@@ -1,4 +1,27 @@
 // _header.scss
+/*sp*/
+.header {
+  width: 90%;
+  margin: 0 auto;
+  background-color: aqua;
+  &-sp-menu {
+    float: left;
+    margin-right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  &__logo {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  &__nav {
+    display: none;
+  }
+}
+
+
+/*wide*/
+@media (min-width: 480px){
 .header {
   z-index: 1;
   background-color: white;
@@ -12,6 +35,9 @@
     margin: 20px 464px 20px 380px;
     padding: 12px;
      //border: 2px solid green;
+  }
+  &-sp-menu{
+    display: none;
   }
   &__nav {
     display: flex;
@@ -34,4 +60,5 @@
        //border: 2px solid blue;
     }
   }
+}
 }

@@ -12,27 +12,48 @@
     padding-bottom: 56.25%;
     height: 0;
     background-image: url("img/hero-img.jpg");
+    background-position: center;
+    background-size: 100%;
   }
   &__logo {
-    color: aqua;
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    font-family: "MS PMincho";
+    font-size: 34px;
+    text-align: center;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -67%);
+    margin: 0;
   }
   &__button button {
-    //font-size: 19px;
-    //background-color: #FACB32;
-    //color: #fff;
-    //border-style: none;
-    //box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
-    //border-radius: 3px;
+    font-size: 14px;
+    background-color: #FACB32;
+    color: #fff;
+    border-style: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    &:hover {
+      background-color: #FABE00;
+      color: #fff;
+    }
   }
   .button-info {
-    //position: absolute;
-    //top: 0px;
-    //left: 0px;
+    position: absolute;
+    padding: 6px 15px;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -40%);
   }
   .button-document {
-    //position: absolute;
-    //top: 0px;
-    //left: 0px;
+    position: absolute;
+    padding: 6px 29px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -20%);
   }
 }
 }

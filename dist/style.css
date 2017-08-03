@@ -313,10 +313,11 @@ ul {
     .about__image {
       float: left;
       width: 100%;
-      padding-bottom: 56.25%;
+      padding-bottom: 75%;
       background-image: url("img/about-img.jpg");
-      background-size: 110%;
-      margin-bottom: 50px; }
+      background-position: 60% 100%;
+      background-size: 145%;
+      margin-bottom: 30px; }
     .about__contents {
       width: 100%;
       margin-bottom: 50px; }

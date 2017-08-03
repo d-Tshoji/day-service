@@ -1,5 +1,57 @@
 // _footer.scss
-
+@media (max-width: 480px){
+.footer {
+  background-color: #444444;
+  width: 100%;
+  padding-bottom: 15px;
+  //height: 367px;
+  color: white;
+   //border: 1px solid red;
+  &__top {
+    height: 15px;
+  }
+  &__nav {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+     //border: 1px solid aqua;
+    &-item {
+      &:link{
+        color: #BBBBBB;
+        text-decoration: none;
+      }
+      &:visited {
+        color: #BBBBBB;
+      }
+      &:hover{
+        color: white;
+      }
+    }
+    &-item p {
+      font-size: 16px;
+      margin-top: 15px;
+    }
+  }
+  &__bottom {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    border-top: 1px solid #9A9A9A;
+      //border: 1px solid yellow;
+    &-toplink {
+      text-decoration: none;
+    }
+    &-toplink p {
+      width: 90%;
+      font-size: 13px;
+      color: #BBBBBB;
+      &:hover{
+        color: white;
+      }
+    }
+  }
+}
+}
 /*wide*/
 @media (min-width: 480px){
 .footer {

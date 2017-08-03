@@ -9,11 +9,11 @@
   left: 0;
   &__back {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 75.00%;
     height: 0;
     background-image: url("img/hero-img.jpg");
-    background-position: center;
-    background-size: 100%;
+    background-position: 50% 40%;
+    background-size: 145%;
   }
   &__logo {
     position: absolute;

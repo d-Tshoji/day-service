@@ -60,15 +60,24 @@
 /*wide*/
 @media (min-width: 480px){
 .main {
-  width: 1920px;
-  height: 1080px;
   position: relative;
-  //background-image: url("img/hero-img.jpg");
-    //border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  //top: 0;
+  //left: 0;
+   //border: 1px solid red;
+  &__back {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    background-image: url("img/hero-img.jpg");
+    background-size: 100%;
+  }
   &__logo {
     position: absolute;
     color: white;
     font-family: "MS PMincho";
+    white-space: nowrap;
     font-size: 100px;
     text-align: center;
     text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
@@ -84,22 +93,26 @@
     border-style: none;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
     border-radius: 3px;
-  }
-  &__button button:hover {
-    background-color: #FABE00;
-    color: #fff;
+    &:hover {
+      background-color: #FABE00;
+      color: #fff;
+    }
   }
   .button-info {
     position: absolute;
     padding: 12px 74px;
-    top: 700px;
-    left: 690px;
+    top: 65.5%;
+    left: 36%;
+    transform: translate(-0%, -34.5%);
+    //left: 690px;
   }
   .button-document {
     position: absolute;
     padding: 12px 87px;
-    top: 700px;
-    left: 980px;
+    top: 65.5%;
+    left: 51.5%;
+    transform: translate(-0%, -34.5%);
+    //left: 980px;
   }
 }
 }

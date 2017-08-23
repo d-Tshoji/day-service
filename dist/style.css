@@ -1,5 +1,5 @@
 body {
-  margin: 0px;
+  margin: 0;
   font-family: "Noto Sans", "sans-serif";
   overflow-x: hidden; }
 
@@ -24,7 +24,7 @@ ul {
     margin-bottom: -15px;
     margin-top: -15px;
     background-color: white;
-    box-shadow: 0px 9px 6px -3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 9px 6px -3px rgba(0, 0, 0, 0.3);
     overflow: visible; }
     .header-sp-menu {
       float: left;
@@ -49,7 +49,7 @@ ul {
     width: 100%;
     height: 100px;
     display: block;
-    box-shadow: 0px 9px 6px -3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 9px 6px -3px rgba(0, 0, 0, 0.3);
     border: 1px solid white; }
     .header__logo {
       font-size: 27px;
@@ -63,12 +63,12 @@ ul {
       width: 50%;
       float: right;
       display: flex;
-      margin-top: 0px;
+      margin-top: 0;
       justify-content: center; }
       .header__nav .nav-item {
         font-size: 15px;
         font-weight: bold;
-        padding: 0px 20px; }
+        padding: 0 20px; }
         .header__nav .nav-item:link {
           color: #878787;
           text-decoration: none; }
@@ -94,30 +94,30 @@ ul {
     color: white;
     font-family: "MS PMincho";
     font-size: 36px;
-    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5); }
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); }
   .btn {
     margin: 20px;
     padding: 6px 15px;
     font-size: 14px;
-    background-color: #FACB32;
+    background-color: #facb32;
     color: #fff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     border-radius: 3px; }
     .btn:hover {
-      background-color: #FABE00;
+      background-color: #fabe00;
       color: #fff; } }
 
 /*pc*/
 /*wide*/
 @media (min-width: 601px) {
-  .hero {
+  .main {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 100px 0;
     background: blue; }
-    .hero_content {
+    .main_content {
       background: yellow;
       text-align: center; }
   .btn {
@@ -129,12 +129,12 @@ ul {
   .news {
     width: 100%;
     margin: 0 auto;
-    background-color: #FAFAFA;
-    border: 1px solid #FAFAFA; }
+    background-color: #fafafa;
+    border: 1px solid #fafafa; }
     .news__title {
       margin-bottom: 31px;
       font-size: 22px;
-      color: #6A6A6A;
+      color: #6a6a6a;
       text-align: center;
       font-weight: bold; }
     .news__tab {
@@ -146,27 +146,27 @@ ul {
       list-style: none; }
       .news__tab-item {
         font-size: 13px;
-        color: #6A6A6A;
+        color: #6a6a6a;
         display: table-cell;
         vertical-align: middle;
-        border-right: 5px solid #FAFAFA;
+        border-right: 5px solid #fafafa;
         height: 50px;
-        background-color: #F2F2F2; }
+        background-color: #f2f2f2; }
         .news__tab-item:first-child {
           font-weight: bold;
-          background-color: #C30D23;
+          background-color: #c30d23;
           color: #fff; }
     .news__contents {
       display: block;
       width: 90%;
       height: 200px;
       margin: 0 auto;
-      margin-top: 0px;
+      margin-top: 0;
       margin-bottom: 100px;
       background: #fff;
       overflow: auto;
-      border: 2px solid #D5D5D5;
-      border-top-color: #C30D23; }
+      border: 2px solid #d5d5d5;
+      border-top-color: #c30d23; }
       .news__contents-frame {
         width: 100%;
         height: 140px;
@@ -179,14 +179,14 @@ ul {
         .news__contents-item-day {
           margin-top: 0;
           font-size: 15px;
-          color: #6D6D6D;
+          color: #6d6d6d;
           font-weight: bold;
           margin-right: 5px; }
         .news__contents-item-announce p {
           margin: 0;
           font-size: 13px;
           width: 70px;
-          background-color: #C30D23;
+          background-color: #c30d23;
           border-radius: 6px;
           color: white;
           font-weight: bold;
@@ -194,8 +194,8 @@ ul {
       .news__contents-article {
         width: 85%;
         float: right;
-        margin-top: 0px;
-        color: #95989A;
+        margin-top: 0;
+        color: #95989a;
         font-size: 17px;
         font-weight: bold;
         line-height: 1.5em; } }
@@ -207,13 +207,13 @@ ul {
     width: 100%;
     height: 762px;
     position: relative;
-    background-color: #FAFAFA;
-    border: 1px solid #FAFAFA; }
+    background-color: #fafafa;
+    border: 1px solid #fafafa; }
     .news__title {
       width: 100%;
       height: 43px;
       font-size: 32px;
-      color: #6A6A6A;
+      color: #6a6a6a;
       text-align: center;
       font-weight: bold; }
     .news__tab {
@@ -226,14 +226,14 @@ ul {
       .news__tab-item {
         font-size: 13px;
         font-weight: bold;
-        color: #6A6A6A;
+        color: #6a6a6a;
         display: table-cell;
         vertical-align: middle;
-        border-right: 10px solid #FAFAFA;
+        border-right: 10px solid #fafafa;
         height: 45px;
-        background-color: #F2F2F2; }
+        background-color: #f2f2f2; }
       .news__tab-color {
-        background-color: #C30D23;
+        background-color: #c30d23;
         color: #fff; }
     .news__contents {
       display: block;
@@ -253,7 +253,7 @@ ul {
         .news__contents-item-day {
           margin-top: 0;
           font-size: 15px;
-          color: #6D6D6D;
+          color: #6d6d6d;
           font-weight: bold;
           margin-right: 5px; }
         .news__contents-item-announce {
@@ -262,17 +262,17 @@ ul {
         .news__contents-item-announce p {
           margin: 0;
           font-size: 15px;
-          background-color: #C30D23;
+          background-color: #c30d23;
           border-radius: 6px;
           color: white;
           font-weight: bold;
           text-align: center; }
       .news__contents-article {
         margin: 0;
-        color: #95989A;
+        color: #95989a;
         font-size: 18px;
         font-weight: bold;
-        padding: 13px 0px 13px 15px;
+        padding: 13px 0 13px 15px;
         width: 700px;
         height: 51px; } }
 
@@ -350,7 +350,7 @@ ul {
 
 @media (max-width: 600px) {
   .footer {
-    background-color: #444444;
+    background-color: #444;
     width: 100%;
     padding-bottom: 15px;
     color: white; }
@@ -360,27 +360,25 @@ ul {
       width: 90%;
       margin: 0 auto;
       position: relative; }
-      .footer__nav-item:link {
-        color: #BBBBBB;
+      .footer__nav-item {
+        color: #bbb;
         text-decoration: none; }
-      .footer__nav-item:visited {
-        color: #BBBBBB; }
-      .footer__nav-item:hover {
-        color: white; }
+        .footer__nav-item:hover {
+          color: white; }
       .footer__nav-item p {
         font-size: 16px;
         margin-top: 15px; }
     .footer__bottom {
       width: 90%;
       margin: 0 auto;
-      margin-bottom: 0px;
-      border-top: 1px solid #9A9A9A; }
+      margin-bottom: 0;
+      border-top: 1px solid #9a9a9a; }
       .footer__bottom-toplink {
         text-decoration: none; }
       .footer__bottom-toplink p {
         width: 90%;
         font-size: 13px;
-        color: #BBBBBB; }
+        color: #bbb; }
         .footer__bottom-toplink p:hover {
           color: white; } }
 
@@ -388,14 +386,14 @@ ul {
 /*wide*/
 @media (min-width: 601px) {
   .footer {
-    background-color: #444444;
+    background-color: #444;
     width: 100%;
     color: white; }
     .footer__top {
       width: 63.1%;
       height: 65px;
       margin: 0 auto;
-      border-bottom: 1px solid #9A9A9A; }
+      border-bottom: 1px solid #9a9a9a; }
     .footer__nav {
       width: 63.1%;
       height: 140px;
@@ -424,13 +422,13 @@ ul {
       width: 63.1%;
       height: 90px;
       margin: 0 auto;
-      background-color: #444444;
-      border-top: 1px solid #9A9A9A; }
+      background-color: #444;
+      border-top: 1px solid #9a9a9a; }
       .footer__bottom-toplink {
         text-decoration: none; }
       .footer__bottom-toplink p {
         font-size: 13px;
-        color: #BBBBBB;
-        margin: 37px 0px 0px 45px; }
+        color: #bbb;
+        margin: 37px 0 0 45px; }
         .footer__bottom-toplink p:hover {
           color: white; } }

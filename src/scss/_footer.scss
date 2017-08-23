@@ -1,7 +1,7 @@
 // _footer.scss
 @media (max-width: 600px) {
   .footer {
-    background-color: #444444;
+    background-color: #444;
     width: 100%;
     padding-bottom: 15px;
     color: white;
@@ -15,13 +15,8 @@
       position: relative;
        //border: 1px solid aqua;
       &-item {
-        &:link {
-          color: #BBBBBB;
-          text-decoration: none;
-        }
-        &:visited {
-          color: #BBBBBB;
-        }
+        color: #bbb;
+        text-decoration: none;
         &:hover {
           color: white;
         }
@@ -34,8 +29,8 @@
     &__bottom {
       width: 90%;
       margin: 0 auto;
-      margin-bottom: 0px;
-      border-top: 1px solid #9A9A9A;
+      margin-bottom: 0;
+      border-top: 1px solid #9a9a9a;
        //border: 1px solid yellow;
       &-toplink {
         text-decoration: none;
@@ -43,7 +38,7 @@
       &-toplink p {
         width: 90%;
         font-size: 13px;
-        color: #BBBBBB;
+        color: #bbb;
         &:hover {
           color: white;
         }
@@ -62,7 +57,7 @@
 
 @media (min-width: 601px) {
   .footer {
-    background-color: #444444;
+    background-color: #444;
     width: 100%;
     color: white;
      //border: 1px solid red;
@@ -70,7 +65,7 @@
       width: 63.1%;
       height: 65px;
       margin: 0 auto;
-      border-bottom: 1px solid #9A9A9A;
+      border-bottom: 1px solid #9a9a9a;
     }
     &__nav {
       width: 63.1%;
@@ -109,15 +104,15 @@
       width: 63.1%;
       height: 90px;
       margin: 0 auto;
-      background-color: #444444;
-      border-top: 1px solid #9A9A9A;
+      background-color: #444;
+      border-top: 1px solid #9a9a9a;
       &-toplink {
         text-decoration: none;
       }
       &-toplink p {
         font-size: 13px;
-        color: #BBBBBB;
-        margin: 37px 0px 0px 45px;
+        color: #bbb;
+        margin: 37px 0 0 45px;
         &:hover {
           color: white;
         }

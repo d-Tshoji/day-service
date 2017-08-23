@@ -6,7 +6,7 @@ body {
 }
 
 p {
-    line-height: 2;
+  line-height: 2;
 }
 
 ul {
@@ -17,6 +17,7 @@ ul {
 .br {
   display: block;
 }
+
 @import "header";
 @import "main";
 @import "news";

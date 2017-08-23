@@ -43,12 +43,6 @@
 }
 
 
-/*pc*/
-
-//@media (min-width: 1281px) {
-//
-//}
-
 /*wide*/
 
 @media (min-width: 601px) {
@@ -70,7 +64,6 @@
     &__contents {
       position: absolute;
       margin-left: 6.3%;
-       //width: 832px;
       width: 43.7%;
       height: 100%;
       color: black;
@@ -87,7 +80,6 @@
       }
       .about__text {
         position: absolute;
-         //width: 442px;
         width: 54%;
         height: 139px;
         font-size: 20px;

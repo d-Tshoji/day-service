@@ -9,15 +9,14 @@
     display: flex;
     padding: 80px 0;
     background-image: url("img/hero-img.jpg");
-    //background-position: center center;
     background-position: 60%;
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     &__content {
       text-align: center;
     }
   }
-  .title-logo{
+  .title-logo {
     color: white;
     font-family: "MS PMincho";
     font-size: 36px;
@@ -32,74 +31,11 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     border-radius: 3px;
     &:hover {
-        background-color: #fabe00;
-        color: #fff;
-      }
+      background-color: #fabe00;
+      color: #fff;
+    }
   }
-  //.main {
-  //  position: relative;
-  //  width: 100%;
-  //  height: 100%;
-  //  top: 0;
-  //  left: 0;
-  //  &__back {
-  //    position: relative;
-  //    padding-bottom: 75.00%;
-  //    height: 0;
-  //    background-image: url("img/hero-img.jpg");
-  //    background-position: 50% 40%;
-  //    background-size: 145%;
-  //  }
-  //  &__logo {
-  //    position: absolute;
-  //    color: white;
-  //    white-space: nowrap;
-  //    font-family: "MS PMincho";
-  //    font-size: 34px;
-  //    text-align: center;
-  //    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
-  //    top: 33%;
-  //    left: 50%;
-  //    transform: translate(-50%, -67%);
-  //    margin: 0;
-  //  }
-  //  &__button button {
-  //    font-size: 14px;
-  //    background-color: #FACB32;
-  //    color: #fff;
-  //    border-style: none;
-  //    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-  //    border-radius: 3px;
-  //    &:hover {
-  //      background-color: #FABE00;
-  //      color: #fff;
-  //    }
-  //  }
-  //  .button-info {
-  //    position: absolute;
-  //    padding: 6px 15px;
-  //    text-align: center;
-  //    top: 60%;
-  //    left: 50%;
-  //    transform: translate(-50%, -40%);
-  //  }
-  //  .button-document {
-  //    position: absolute;
-  //    padding: 6px 29px;
-  //    top: 80%;
-  //    left: 50%;
-  //    transform: translate(-50%, -20%);
-  //  }
-  //}
 }
-
-/*pc*/
-
-//@media (min-width: 1281px) {
-//
-//}
-
-/*wide*/
 
 @media (min-width: 601px) {
   .main {
@@ -118,65 +54,4 @@
     margin: 10px;
     background: #fff;
   }
-  
-
-
-
-
-
-
-  //.main {
-  //  position: relative;
-  //  width: 100%;
-  //  height: 100%;
-  //    //border: 1px solid red;
-  //  &__back {
-  //    position: relative;
-  //    padding-bottom: 56.25%;
-  //    height: 0;
-  //    background-image: url("img/hero-img.jpg");
-  //    background-size: 100%;
-  //  }
-  //  &__logo {
-  //    position: absolute;
-  //    color: white;
-  //    font-family: "MS PMincho";
-  //    white-space: nowrap;
-  //    font-size: 100px;
-  //    text-align: center;
-  //    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
-  //    top: 50%;
-  //    left: 50%;
-  //    transform: translate(-50%, -50%);
-  //    margin: 0;
-  //  }
-  //  &__button button {
-  //    font-size: 19px;
-  //    background-color: #FACB32;
-  //    color: #fff;
-  //    border-style: none;
-  //    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-  //    border-radius: 3px;
-  //    &:hover {
-  //      background-color: #FABE00;
-  //      color: #fff;
-  //    }
-  //  }
-  //  .button-info {
-  //    position: absolute;
-  //    padding: 12px 74px;
-  //    top: 65.5%;
-  //    left: 36%;
-  //    transform: translate(-0%, -34.5%);
-  //    //left: 690px;
-  //  }
-  //  .button-document {
-  //    position: absolute;
-  //    padding: 12px 87px;
-  //    top: 65.5%;
-  //    left: 51.5%;
-  //    transform: translate(-0%, -34.5%);
-  //    //left: 980px;
-  //  }
-  //}
 }

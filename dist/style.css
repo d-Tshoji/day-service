@@ -410,14 +410,11 @@ ul {
         height: 26px;
         margin-right: 11.1%;
         padding-top: 6px;
-        white-space: nowrap; }
+        white-space: nowrap;
+        color: #bbb;
+        text-decoration: none; }
         .footer__nav-item:last-child {
           margin-right: 0; }
-        .footer__nav-item:link {
-          color: #BBBBBB;
-          text-decoration: none; }
-        .footer__nav-item:visited {
-          color: #BBBBBB; }
         .footer__nav-item:hover {
           color: white; }
       .footer__nav-item p {

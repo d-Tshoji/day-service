@@ -54,7 +54,6 @@
 
 
 /*pc*/
-
 //@media (min-width: 1281px) {
 //
 //}
@@ -91,16 +90,11 @@
         margin-right: 11.1%;
         padding-top: 6px;
         white-space: nowrap;
+        color: #bbb;
+        text-decoration: none;
          //border: 1px solid royalblue;
         &:last-child {
           margin-right: 0;
-        }
-        &:link {
-          color: #BBBBBB;
-          text-decoration: none;
-        }
-        &:visited {
-          color: #BBBBBB;
         }
         &:hover {
           color: white;

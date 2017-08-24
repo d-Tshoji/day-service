@@ -137,7 +137,11 @@ ul {
     text-decoration-line: none; }
     .btn:hover {
       background-color: #fabe00;
-      color: #fff; } }
+      color: #fff; }
+  .info {
+    padding: 12px 74px; }
+  .document {
+    padding: 12px 87px; } }
 
 /*sp*/
 @media (max-width: 600px) {

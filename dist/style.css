@@ -138,9 +138,9 @@ ul {
     .btn:hover {
       background-color: #fabe00;
       color: #fff; }
-  .info {
+  .btn-info {
     padding: 12px 74px; }
-  .document {
+  .btn-document {
     padding: 12px 87px; } }
 
 /*sp*/

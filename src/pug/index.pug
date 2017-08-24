@@ -1,7 +1,15 @@
 extend _base
 
 block content
-  .main
+  hero.hero
+    .hero__content
+      h2.title-logo いつもと違う<span class="br">いつもの毎日へ</span>
+      .hero__buttons
+        .btn お問い合わせ
+        .btn 請求資料
+        
+  //.main
+    .main__back
     h2.main__logo いつもと違う<span class="br">いつもの毎日へ</span>
     .main__button
       button.button-info お問い合わせ
@@ -15,17 +23,16 @@ block content
       li.news__tab-item トピック
 
     .news__contents
-      - for (var i = 0; i < 5; i++){
-      .news__contents-frame
-        .news__contents-item
-          p.news__contents-item-day 2017.06.11
-          p.news__contents-item-announce お知らせ
-        p.news__contents-article 内覧会・体験会「6月15日（土）」まずはお電話でご予約ください！！ _
-                <span class="br">電話:1234-567-890</span>
-      - }
+      - var i = 5
+      while i--
+        .news__contents-frame
+          .news__contents-item
+            p.news__contents-item-day 2017.06.11
+            .news__contents-item-announce: p お知らせ
+          p.news__contents-article 内覧会･体験会｢6月15日(土)｣まずはお電話でご予約ください！！<span class="br">電話:1234-567-890</span>
 
   .about
+    .about__image
     .about__contents
       h2.about__heading 和らぎの庭園
       p.about__text ここ｢和らぎの庭園｣は小さなデイサービスではありますが介護が必要になっても、家族や親しい人々と共に不安の無い生活を送りたいと言う高齢者の方々の願いに応える為「自分の力を」尊重しつつ、みなさまのサポートをいたします。
-    .about__image

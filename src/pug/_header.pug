@@ -1,10 +1,13 @@
 header.header
 
-    .header
-        p.header__logo 和らぎの庭園
-        .header__navi
-            navi.navi-item: p 施設について
-            a(href='/service/').navi-item: p サービス内容
-            .navi-item: p 活動写真
-            .navi-item: p 食事
-            .navi-item: p お問い合わせ
+  .header
+    <i class="fa fa-bars header-sp-menu" aria-hidden="true"></i>
+    .container
+      .row
+        .header__nav.col-lg-6
+          a(href=).nav-item: p 施設について
+          a(href='/service/').nav-item: p サービス内容
+          a(href=).nav-item: p 活動写真
+          a(href=).nav-item: p 食事
+          a(href=).nav-item: p お問い合わせ
+        p.header__logo.col-lg-6 和らぎの庭園

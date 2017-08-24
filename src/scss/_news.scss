@@ -1,99 +1,191 @@
 // _news.scss
 
-.news {
-    width: 1920px;
+/*sp*/
+
+@media (max-width: 600px) {
+  .news {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fafafa;
+    border: 1px solid #fafafa;
+    &__title {
+      margin-bottom: 31px;
+      font-size: 22px;
+      color: #6a6a6a;
+      text-align: center;
+      font-weight: bold;
+    }
+    &__tab {
+      display: table;
+      table-layout: fixed;
+      text-align: center;
+      width: 91%;
+      margin: 0 auto;
+      list-style: none;
+       //border: 1px solid green;
+      &-item {
+        font-size: 13px;
+        color: #6a6a6a;
+        display: table-cell;
+        vertical-align: middle;
+        border-right: 5px solid #fafafa;
+        height: 50px;
+        background-color: #f2f2f2;
+        &:first-child {
+          font-weight: bold;
+          background-color: #c30d23;
+          color: #fff;
+        }
+      }
+    }
+    &__contents {
+      display: block;
+      width: 90%;
+      height: 200px;
+      margin: 0 auto;
+      margin-top: 0;
+      margin-bottom: 100px;
+      background: #fff;
+      overflow: auto;
+      border: 2px solid #d5d5d5;
+      border-top-color: #c30d23;
+      &-frame {
+        width: 100%;
+        height: 140px;
+        margin-top: 10px;
+         //border: 1px solid aqua;
+      }
+      &-item {
+        display: flex;
+        width: 95%;
+        height: 40px;
+        margin: 0 auto;
+         //border: 1px solid limegreen;
+        &-day {
+          margin-top: 0;
+          font-size: 15px;
+          color: #6d6d6d;
+          font-weight: bold;
+          margin-right: 5px;
+        }
+        &-announce p {
+          margin: 0;
+          font-size: 13px;
+          width: 70px;
+          background-color: #c30d23;
+          border-radius: 6px;
+          color: white;
+          font-weight: bold;
+          text-align: center;
+           //border: 2px solid lightblue;
+        }
+      }
+      &-article {
+        width: 85%;
+        float: right;
+        margin-top: 0;
+        color: #95989a;
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 1.5em;
+         //border: 1px solid pink;
+      }
+    }
+  }
+}
+
+
+/*wide*/
+
+@media (min-width: 601px) {
+  .news {
+    width: 100%;
     height: 762px;
     position: relative;
-    background-color: #FAFAFA;
-
+    background-color: #fafafa;
+    border: 1px solid #fafafa;
     &__title {
-        width: 128px;
-        height: 43px;
-        margin: 43px 896px 53px 896px;
-
-        font-size: 32px;
-        color: #6A6A6A;
-        text-align: center;
-        font-weight: bold;
-        
-        //border: 1px solids green;
+      width: 100%;
+      height: 43px;
+      font-size: 32px;
+      color: #6a6a6a;
+      text-align: center;
+      font-weight: bold;
+       //border: 1px solid green;
     }
-
     &__tab {
-        display: table;
-        table-layout: fixed;
-        text-align: center;
-        width: 1000px;
-
-        margin: 0 auto;
-        margin-bottom: 40px;
-                //border: 1px solid green;
-        &-item {
-            font-size: 13px;
-            font-weight: bold;
-            color: #6A6A6A;
-            display: table-cell;
-            vertical-align: middle;
-            border-right: 10px solid #FAFAFA;
-            height: 45px;
-            background-color: #F2F2F2;
-        }
-        &-color {
-            background-color: #C30D23;
-            color: #fff;
-        }
+      display: table;
+      table-layout: fixed;
+      text-align: center;
+      width: 1000px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+       //border: 1px solid green;
+      &-item {
+        font-size: 13px;
+        font-weight: bold;
+        color: #6a6a6a;
+        display: table-cell;
+        vertical-align: middle;
+        border-right: 10px solid #fafafa;
+        height: 45px;
+        background-color: #f2f2f2;
+      }
+      &-color {
+        background-color: #c30d23;
+        color: #fff;
+      }
     }
-    &__contents{
-        display: block;
-        width: 1000px;
-        height: 380px;
-        margin: 0 auto;
-        background: #fff;
-        overflow: auto;
-            //border: 1px solid purple;
-        &-frame{
-            display: flex;
-            width: 100%;
-            height: 80px;
-            margin-bottom: 37px;
-                //border: 1px solid aqua;
+    &__contents {
+      display: block;
+      width: 1000px;
+      height: 380px;
+      margin: 0 auto;
+      background: #fff;
+      overflow: auto;
+       //border: 1px solid purple;
+      &-frame {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        margin-bottom: 37px;
+         //border: 1px solid aqua;
+      }
+      &-item {
+        display: flex;
+        width: 290px;
+         //border: 1px solid limegreen;
+        &-day {
+          margin-top: 0;
+          font-size: 15px;
+          color: #6d6d6d;
+          font-weight: bold;
+          margin-right: 5px;
         }
-        &-item {
-            display:flex;
-            width: 290px;
-                //border: 1px solid limegreen;
-            &-day{
-                margin-top: 0;
-                font-size: 15px;
-                color: #6D6D6D;
-                font-weight: bold;
-                margin-right: 5px;
-            }
-            &-announce{
-                margin-top: 0;
-                font-size: 15px;
-                color: white;
-                font-weight: bold;
-                background-color: #C30D23;
-                border-radius: 6px;
-                text-align: center;
-                width: 75px;
-                height: 20px;
-            }
+        &-announce {
+          width: 75px;
+          height: 10px;
         }
-
-        &-article {
-            margin: 0;
-            color: #95989A;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 13px 0px 13px 15px;
-            width: 700px;
-            height: 51px;
-                //border: 1px solid pink;
+        &-announce p {
+          margin: 0;
+          font-size: 15px;
+          background-color: #c30d23;
+          border-radius: 6px;
+          color: white;
+          font-weight: bold;
+          text-align: center;
         }
-
-
-
+      }
+      &-article {
+        margin: 0;
+        color: #95989a;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 13px 0 13px 15px;
+        width: 700px;
+        height: 51px;
+         //border: 1px solid pink;
+      }
     }
+  }
 }

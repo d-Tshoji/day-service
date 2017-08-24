@@ -95,13 +95,15 @@ ul {
     font-size: 36px;
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); }
   .btn {
+    display: block;
     margin: 20px;
     padding: 6px 15px;
     font-size: 14px;
     background-color: #facb32;
     color: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-    border-radius: 3px; }
+    border-radius: 3px;
+    text-decoration-line: none; }
     .btn:hover {
       background-color: #fabe00;
       color: #fff; } }

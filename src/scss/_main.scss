@@ -3,7 +3,7 @@
 /*sp*/
 
 @media (max-width: 600px) {
-  .main {
+  .hero {
     justify-content: center;
     width: 100%;
     display: flex;
@@ -38,7 +38,7 @@
 }
 
 @media (min-width: 601px) {
-  .main {
+  .hero {
     width: 100%;
     display: flex;
     align-items: center;

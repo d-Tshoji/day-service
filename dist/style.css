@@ -62,7 +62,8 @@ ul {
       float: right;
       display: flex;
       margin-top: 0;
-      justify-content: center; }
+      justify-content: center;
+      white-space: nowrap; }
       .header__nav .nav-item {
         font-size: 15px;
         font-weight: bold;

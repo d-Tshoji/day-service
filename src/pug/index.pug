@@ -17,10 +17,10 @@ block content
 
   .news
     h2.news__title 新着情報
-    ul.news__tab
+    nav.news__tab
       a(href="#all").news__tab-item.news__tab-color すべて
-      a(href="info").news__tab-item 新着情報
-      a(href="topic").news__tab-item トピック
+      a(href="#info").news__tab-item 新着情報
+      a(href="#topic").news__tab-item トピック
 
     #all.news__contents
       - var i = 5

@@ -36,10 +36,13 @@
           background-color: #c30d23;
           color: #fff;
         }
+        &:target {
+          display: block;
+        }
       }
     }
     &__contents {
-      display: block;
+      display: none;
       width: 90%;
       height: 200px;
       margin: 0 auto;
@@ -85,6 +88,9 @@
         font-size: 17px;
         font-weight: bold;
         line-height: 1.5em;
+      }
+      &:target {
+        display: block;
       }
     }
   }
@@ -135,7 +141,7 @@
       }
     }
     &__contents {
-      display: block;
+      display: none;
       width: 1000px;
       height: 380px;
       margin: 0 auto;
@@ -179,6 +185,9 @@
         padding: 13px 0 13px 15px;
         width: 700px;
         height: 51px;
+      }
+      &:target {
+        display: block;
       }
     }
   }

@@ -13,12 +13,12 @@
       background-image: url("img/about-img.jpg");
       background-position: 60% 100%;
       background-size: 145%;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
        //border: 1px solid magenta;
     }
     &__contents {
       width: 100%;
-      margin-bottom: 50px;
+      margin-bottom: 60px;
        //border: 1px solid blue;
       .about__heading {
         width: 85%;
@@ -49,8 +49,11 @@
   .about {
     position: relative;
     display: flex;
-    width: 100%;
+    width: 1200px;
     height: 510px;
+    @media (min-width: 1201px) {
+      width: 100%;
+    }
      //border: 1px solid red;
     &__image {
       position: absolute;

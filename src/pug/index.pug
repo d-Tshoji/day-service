@@ -18,7 +18,7 @@ block content
   .news
     h2.news__title 新着情報
     nav.news__tab
-      a(href="#all").news__tab-item すべて
+      a(href="#all").news__tab-item.news__tab-color すべて
       a(href="#info").news__tab-item 新着情報
       a(href="#topic").news__tab-item トピック
 
@@ -31,9 +31,21 @@ block content
             .news__contents-item-announce: p お知らせ
           p.news__contents-article 内覧会･体験会｢6月15日(土)｣まずはお電話でご予約ください！！<span class="br">電話:1234-567-890</span>
     #info.news__contents
-      p 新着情報です
+      - var i = 3
+      while i--
+        .news__contents-frame
+            .news__contents-item
+              p.news__contents-item-day 2017.06.11
+              .news__contents-item-announce: p 新着
+            p.news__contents-article 今週の催し物は流しそうめんになりました。
     #topic.news__contents
-      p こちらはトピック
+      - var i = 3
+      while i--
+        .news__contents-frame
+            .news__contents-item
+              p.news__contents-item-day 2017.06.11
+              .news__contents-item-announce: p トピック
+            p.news__contents-article ご利用中の須吾谷さんが散歩中に新種の虫を発見しました！
   .about
     .about__image
     .about__contents

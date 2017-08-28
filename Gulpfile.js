@@ -34,8 +34,14 @@ gulp.task('imagemin', function () {
     .pipe(gulp.dest('dist/img'))
 });
 
-gulp.task('default', function () {
+gulp.task('js', function () {
+  return gulp.src('./src/scripts/**/*.js')
+    .pipe(gulp.dest('./dist'))
+});
+
+gulp.task('default',['pug', 'sass', 'js'], function () {
   gulp.watch('./src/scss/**/*.scss', ['sass']);
   gulp.watch('./src/pug/**/*.pug', ['pug']);
   gulp.watch('./src/img/**/*', ['imagemin']);
+  gulp.watch('./src/scripts/**/*.js',['js'])
 });

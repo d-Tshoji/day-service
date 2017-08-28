@@ -27,11 +27,13 @@
     }
     &__nav {
       display: none;
+    }
+    .active {
       width: 200px;
       height: 100%;
       position: fixed;
       background-color: #c30d23;
-      .nav-item{
+      .nav-item {
         display: flex;
         color: #fff;
         margin: 20px 15px;

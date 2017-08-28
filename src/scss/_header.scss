@@ -26,13 +26,14 @@
       font-weight: bold;
     }
     &__nav {
-      display: none;
-    }
-    .active {
+      display: block;
       width: 200px;
       height: 100%;
       position: fixed;
       background-color: #c30d23;
+      transform: scaleX(0);
+      transition: .3s;
+      transform-origin: left;
       .nav-item {
         display: flex;
         color: #fff;

@@ -5,20 +5,17 @@
     width: 100%;
     padding-bottom: 15px;
     color: white;
-     //border: 1px solid red;
     &__top {
       height: 15px;
     }
     &__nav {
       width: 90%;
       margin: 0 auto;
-       //border: 1px solid aqua;
       &-item {
         display: flex;
         color: #bbb;
         margin: 20px 0;
         text-decoration: none;
-          //border: 1px solid hotpink;
         &:hover {
           color: white;
         }
@@ -30,7 +27,6 @@
       margin-bottom: 0;
       padding: 20px 0;
       border-top: 1px solid #9a9a9a;
-       //border: 1px solid yellow;
       &-toplink {
         text-decoration: none;
       }
@@ -54,7 +50,6 @@
     background-color: #444;
     width: 1200px;
     color: white;
-     //border: 1px solid red;
     &__top {
       width: 63.1%;
       height: 65px;
@@ -65,13 +60,11 @@
       width: 63.1%;
       height: 140px;
       margin: 0 auto;
-       //border: 1px solid mediumslateblue;
       &-frame {
         width: 90%;
         display: flex;
         margin: 0 auto;
         margin-top: 49px;
-         //border: 1px solid lightgreen;
       }
       &-item {
         width: 118px;
@@ -81,7 +74,6 @@
         white-space: nowrap;
         color: #bbb;
         text-decoration: none;
-         //border: 1px solid royalblue;
         &:last-child {
           margin-right: 0;
         }
@@ -114,6 +106,7 @@
     }
   }
 }
+
 @media (min-width: 1201px) {
   .footer {
     width: 100%;

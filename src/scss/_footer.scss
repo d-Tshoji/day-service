@@ -12,24 +12,23 @@
     &__nav {
       width: 90%;
       margin: 0 auto;
-      position: relative;
        //border: 1px solid aqua;
       &-item {
+        display: flex;
         color: #bbb;
+        margin: 20px 0;
         text-decoration: none;
+          //border: 1px solid hotpink;
         &:hover {
           color: white;
         }
-      }
-      &-item p {
-        font-size: 16px;
-        margin-top: 15px;
       }
     }
     &__bottom {
       width: 90%;
       margin: 0 auto;
       margin-bottom: 0;
+      padding: 20px 0;
       border-top: 1px solid #9a9a9a;
        //border: 1px solid yellow;
       &-toplink {

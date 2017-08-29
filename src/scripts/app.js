@@ -1,5 +1,5 @@
 $(".js-nav-burger").on("click", function () {
-  $('.js-nav').toggleClass('active');
+  $('.js-nav').addClass('active');
 });
 
 $(document).on('click', function (e) {

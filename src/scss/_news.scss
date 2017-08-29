@@ -31,14 +31,11 @@
         height: 50px;
         background-color: #f2f2f2;
         text-decoration: none;
-        &:first-child {
-          font-weight: bold;
-          background-color: #c30d23;
-          color: #fff;
-        }
-        &:target {
-          display: block;
-        }
+      }
+      .tab-active {
+        font-weight: bold;
+        background-color: #c30d23;
+        color: #fff;
       }
     }
     &__contents {
@@ -89,9 +86,9 @@
         font-weight: bold;
         line-height: 1.5em;
       }
-      &:target {
-        display: block;
-      }
+    }
+    .contents-active {
+      display: block;
     }
   }
 }
@@ -132,7 +129,7 @@
         background-color: #f2f2f2;
         text-decoration: none;
       }
-      &-color {
+      .tab-active {
         background-color: #c30d23;
         color: #fff;
       }
@@ -183,9 +180,9 @@
         width: 700px;
         height: 51px;
       }
-      &:target {
-        display: block;
-      }
+    }
+    .contents-active {
+      display: block;
     }
   }
 }

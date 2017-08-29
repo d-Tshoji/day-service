@@ -34,13 +34,3 @@ $(".js-tab-topic").on("click", function () {
   $('.js-tab-topic').addClass('tab-active');
   $('.js-topic').addClass('contents-active');
 });
-
-
-
-//$(".js-tab-color").on("click", function () {
-//  alert("色変えるにょ")
-//  $('.js-tab').removeClass('tab-active');
-//  $(this).addClass('tab-active');
-//});
-
-

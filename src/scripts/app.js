@@ -14,23 +14,14 @@ $('.js-nav').on('click', function (event) {
   event.stopPropagation();
 });
 
-$(".js-tab-all").on("click", function () {
-  $('.news__contents').removeClass('contents-active');
-  $('.js-tab-reset').removeClass('tab-active');
-  $('.js-tab-all').addClass('tab-active');
-  $('.js-all').addClass('contents-active');
-});
 
-$(".js-tab-info").on("click", function () {
-  $('.news__contents').removeClass('contents-active');
-  $('.js-tab-reset').removeClass('tab-active');
-  $('.js-tab-info').addClass('tab-active');
-  $('.js-info').addClass('contents-active');
-});
+$(".js-tab-trg").on("click", function () {
+  var targetId = $(this).data('target');
 
-$(".js-tab-topic").on("click", function () {
-  $('.news__contents').removeClass('contents-active');
-  $('.js-tab-reset').removeClass('tab-active');
-  $('.js-tab-topic').addClass('tab-active');
-  $('.js-topic').addClass('contents-active');
+  $('.js-tab-trg').removeClass('tab-active');
+  $(this).addClass('tab-active');
+  $('.js-tab-content').removeClass('contents-active');
+  $('.js-tab-content--' + targetId).addClass('contents-active');
+
+  return false;
 });

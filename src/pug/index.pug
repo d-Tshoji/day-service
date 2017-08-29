@@ -11,11 +11,11 @@ block content
   .news
     h2.news__title 新着情報
     nav.news__tab
-      .news__tab-item__tab.js-tab-all.js-tab-reset.tab-active すべて
-      .news__tab-item__tab.js-tab-info.js-tab-reset 新着情報
-      .news__tab-item__tab.js-tab-topic.js-tab-reset トピック
+      .news__tab-item__tab.js-tab-trg(data-target="a").tab-active すべて
+      .news__tab-item__tab.js-tab-trg(data-target="b") 新着情報
+      .news__tab-item__tab.js-tab-trg(data-target="c") トピック
 
-    .news__contents.js-all.contents-active
+    .news__contents.js-tab-content.js-tab-content--a.contents-active
       - var i = 5
       while i--
         .news__contents-frame
@@ -23,7 +23,7 @@ block content
             p.news__contents-item-day 2017.06.11
             .news__contents-item-announce: p お知らせ
           p.news__contents-article 内覧会･体験会｢6月15日(土)｣まずはお電話でご予約ください！！<span class="br">電話:1234-567-890</span>
-    .news__contents.js-info
+    .news__contents.js-tab-content.js-tab-content--b
       - var i = 3
       while i--
         .news__contents-frame
@@ -31,7 +31,7 @@ block content
               p.news__contents-item-day 2017.06.11
               .news__contents-item-announce: p 新着
             p.news__contents-article 今週の催し物は流しそうめんになりました。
-    .news__contents.js-topic
+    .news__contents.js-tab-content.js-tab-content--c
       - var i = 3
       while i--
         .news__contents-frame

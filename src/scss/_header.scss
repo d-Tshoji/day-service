@@ -45,6 +45,9 @@
         }
       }
     }
+    .active {
+      transform: scaleX(1);
+    }
   }
 }
 

@@ -46,7 +46,7 @@
   .hero {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 1200px;
     padding: 466px 0;
     margin: 0;
     background-image: url("img/hero-img.jpg");
@@ -81,5 +81,10 @@
   }
   .btn--document {
     padding: 12px 87px;
+  }
+}
+@media (min-width: 1201px) {
+  .hero {
+    width: 100%;
   }
 }

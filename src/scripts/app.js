@@ -13,3 +13,15 @@ $('.js-nav-burger').on('click', function (event) {
 $('.js-nav').on('click', function (event) {
   event.stopPropagation();
 });
+
+
+$(".js-tab-trg").on("click", function () {
+  var targetId = $(this).data('target');
+
+  $('.js-tab-trg').removeClass('tab-active');
+  $(this).addClass('tab-active');
+  $('.js-tab-content').removeClass('contents-active');
+  $('.js-tab-content--' + targetId).addClass('contents-active');
+
+  return false;
+});

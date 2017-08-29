@@ -7,22 +7,15 @@ block content
       .hero__buttons
         a(href="").btn.btn--info お問い合わせ
         a(href="").btn.btn--document 請求資料
-        
-  //.main
-    .main__back
-    h2.main__logo いつもと違う<span class="br">いつもの毎日へ</span>
-    .main__button
-      button.button-info お問い合わせ
-      button.button-document 資料請求
 
   .news
     h2.news__title 新着情報
     nav.news__tab
-      a(href="#all").news__tab-item__tab--active.news__tab-color すべて
-      a(href="#info").news__tab-item__tab--active 新着情報
-      a(href="#topic").news__tab-item__tab--active トピック
+      .news__tab-item__tab.js-tab-trg(data-target="a").tab-active すべて
+      .news__tab-item__tab.js-tab-trg(data-target="b") 新着情報
+      .news__tab-item__tab.js-tab-trg(data-target="c") トピック
 
-    #all.news__contents
+    .news__contents.js-tab-content.js-tab-content--a.contents-active
       - var i = 5
       while i--
         .news__contents-frame
@@ -30,7 +23,7 @@ block content
             p.news__contents-item-day 2017.06.11
             .news__contents-item-announce: p お知らせ
           p.news__contents-article 内覧会･体験会｢6月15日(土)｣まずはお電話でご予約ください！！<span class="br">電話:1234-567-890</span>
-    #info.news__contents
+    .news__contents.js-tab-content.js-tab-content--b
       - var i = 3
       while i--
         .news__contents-frame
@@ -38,7 +31,7 @@ block content
               p.news__contents-item-day 2017.06.11
               .news__contents-item-announce: p 新着
             p.news__contents-article 今週の催し物は流しそうめんになりました。
-    #topic.news__contents
+    .news__contents.js-tab-content.js-tab-content--c
       - var i = 3
       while i--
         .news__contents-frame

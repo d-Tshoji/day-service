@@ -16,18 +16,18 @@
   サーバーを立ち上げる
   > `$ gulp serve`
 
-- ##### pugの監視
+- ##### pugファイルのコンパイル
   pugファイルをhtmlファイルにコンパイルしてdistにエクスポート
   > `$ gulp pug`
 
-- #### sassの監視
+- ##### sassファイルのコンパイル
   sassファイルをcssファイルにコンパイルしてdistにエクスポート
   > `$ gulp sass`
 
-- #### imageの監視
+- ##### imageファイルの圧縮
   imageファイルを圧縮してdist/imgにエクスポート
   > `$ gulp imagemin `
 
-- #### jsの監視
+- ##### jsのコンパイル
   jsをの変更点をdistにエクスポート
   > `$ gulp js `

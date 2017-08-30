@@ -39,7 +39,7 @@ gulp.task('js', function () {
     .pipe(gulp.dest('./dist'))
 });
 
-gulp.task('default',['pug', 'sass', 'js'], function () {
+gulp.task('default',['pug', 'sass', 'js','imagemin'], function () {
   gulp.watch('./src/scss/**/*.scss', ['sass']);
   gulp.watch('./src/pug/**/*.pug', ['pug']);
   gulp.watch('./src/img/**/*', ['imagemin']);

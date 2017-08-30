@@ -1,5 +1,8 @@
 // _footer.scss
-@media (max-width: 600px) {
+
+/*sp*/
+
+@include tablet {
   .footer {
     background-color: #444;
     width: 100%;
@@ -45,7 +48,7 @@
 
 /*wide*/
 
-@media (min-width: 601px) {
+@include desktop {
   .footer {
     background-color: #444;
     width: 1200px;
@@ -107,7 +110,7 @@
   }
 }
 
-@media (min-width: 1201px) {
+@include desktop-wide {
   .footer {
     width: 100%;
   }

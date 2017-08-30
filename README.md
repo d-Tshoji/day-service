@@ -1,28 +1,33 @@
 
-project day-servise
+# project day-servise
+#### このプロジェクトのコマンド説明
+***
 
-このプロジェクトについてコマンド説明など
+- ##### package導入
+  package.jsonの内容に従って、packageをインストールします。
+  > `$ npm install`
 
-//を除きターミナルに打ち込み実行可能
+- ##### コードの監視
+  **Gulpfile.js**の`gulp.task('default',['pug', 'sass', 'js'], function () {`
+  []内に登録されたファイルをコンパイル、圧縮をした後にsrcからdistにエクスポートすることができる。
+  > `$ gulp`
 
-//npm install  // package導入
-  .package.jsonの内容に従って、packageをインストールします。
+- ##### サーバー起動
+  サーバーを立ち上げる
+  > `$ gulp serve`
 
-//gulp  // 監視
-  .gulp.task('default',['pug', 'sass', 'js'], function () {
-  []内に登録されたファイルをコンパイル、圧縮、等をした後にsrcからdistにエクスポートできる。
+- ##### pugの監視
+  pugファイルをhtmlファイルにコンパイルしてdistにエクスポート
+  > `$ gulp pug`
 
-//gulp serve  // サーバー起動
-  .サーバーを立ち上げる
+- #### sassの監視
+  sassファイルをcssファイルにコンパイルしてdistにエクスポート
+  > `$ gulp sass`
 
-//gulp pug  //  pugの監視
-  .pugファイルをhtmlファイルにコンパイルしてdistにエクスポート
+- #### imageの監視
+  imageファイルを圧縮してdist/imgにエクスポート
+  > `$ gulp imagemin `
 
-//gulp sass //  sassの監視
-  .sassファイルをcssファイルにコンパイルしてdistにエクスポート
-
-//gulp imagemin // imageの監視
-  .imageファイルを圧縮してdist/imgにエクスポート
-
-//gulp js //  jsの監視
-  .jsをの変更点をdistにエクスポート
+- #### jsの監視
+  jsをの変更点をdistにエクスポート
+  > `$ gulp js `

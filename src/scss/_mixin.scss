@@ -1,6 +1,3 @@
-$desktop-width: 601px;
-$desktop-wide-width: 1201px;
-
 @mixin tablet {
   @media (max-width: #{$desktop-width - 1px}) {
     @content;

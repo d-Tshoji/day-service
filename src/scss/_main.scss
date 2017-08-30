@@ -2,7 +2,7 @@
 
 /*sp*/
 
-@media (max-width: 600px) {
+@include tablet {
   .hero {
     justify-content: center;
     width: 100%;
@@ -42,7 +42,7 @@
 
 /*wide*/
 
-@media (min-width: 601px) {
+@include desktop {
   .hero {
     display: flex;
     justify-content: center;
@@ -83,7 +83,7 @@
     padding: 12px 87px;
   }
 }
-@media (min-width: 1201px) {
+@include desktop-wide {
   .hero {
     width: 100%;
   }

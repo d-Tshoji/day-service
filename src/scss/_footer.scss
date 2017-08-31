@@ -31,12 +31,10 @@
       padding: 20px 0;
       border-top: 1px solid #9a9a9a;
       &-toplink {
-        text-decoration: none;
-      }
-      &-toplink p {
         width: 90%;
         font-size: 13px;
         color: #bbb;
+        text-decoration: none;
         &:hover {
           color: white;
         }
@@ -95,15 +93,18 @@
       margin: 0 auto;
       background-color: #444;
       border-top: 1px solid #9a9a9a;
-      &-toplink {
-        text-decoration: none;
+      &-frame {
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 25px;
       }
-      &-toplink p {
+      &-toplink {
         font-size: 13px;
         color: #bbb;
-        margin: 37px 0 0 45px;
+        text-decoration: none;
         &:hover {
-          color: white;
+          color: #fff;
         }
       }
     }

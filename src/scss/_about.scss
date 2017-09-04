@@ -2,7 +2,7 @@
 
 /*sp*/
 
-@include tablet {
+//@include tablet {
   .about {
     display: block;
     &__image {
@@ -35,7 +35,7 @@
       }
     }
   }
-}
+//}
 
 
 /*wide*/
@@ -47,37 +47,42 @@
     width: 1200px;
     height: 510px;
     &__image {
-      position: absolute;
       width: 50%;
       height: 100%;
-      background-image: url("img/about-img.jpg");
+      float: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      background-position: 0 0;
+      background-size: auto auto;
+      position: absolute;
       top: 0;
       left: 50%;
     }
     &__contents {
-      position: absolute;
-      margin-left: 6.3%;
       width: 43.7%;
       height: 100%;
+      margin-left: 6.3%;
+      margin-bottom: 0px;
       color: black;
+      position: absolute;
       top: 0;
       left: 0;
       .about__heading {
-        position: absolute;
         font-size: 30px;
+        width: auto;
+        margin: 0;
+        text-align: start;
         font-weight: bold;
-        color: black;
+        position: absolute;
         top: 24.5%;
         left: 23%;
       }
       .about__text {
-        position: absolute;
-        width: 54%;
         height: 139px;
+        width: 54%;
         font-size: 20px;
-        letter-spacing: 2px;
         line-height: 1.3em;
-        color: black;
+        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);

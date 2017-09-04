@@ -30,6 +30,7 @@
     font-weight: bold;
     font-size: 15px;
     padding: 8px;
+    cursor: default;
     @include desktop {
       font-size: 27px;
       padding: 0;

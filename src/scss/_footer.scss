@@ -1,61 +1,25 @@
 // _footer.scss
-
-/*sp*/
-
-//@include tablet {
-  .footer {
-    background-color: #444; //
-    color: white;           //
-    width: 100%;
-    padding-bottom: 15px;
-    &__top {
-      height: 15px;
-    }
-    &__nav {
-      margin: 0 auto;   //
-      width: 90%;
-      &-item {
-        color: #bbb;          //
-        text-decoration: none;  //
-        display: flex;
-        margin: 20px 0;
-        &:hover {
-          color: white;     //
-        }
-      }
-    }
-    &__bottom {
-      margin: 0 auto;                   //
-      border-top: 1px solid #9a9a9a;  //
-      width: 90%;
-      padding: 20px 0;
-      margin-bottom: 0;
-      &-toplink {
-        font-size: 13px;
-        color: #bbb;
-        text-decoration: none;
-        width: 90%;
-        &:hover {
-          color: #fff;    //
-        }
-      }
-    }
-  }
-//}
-
-
-/*wide*/
-
-@include desktop {
-  .footer {
+.footer {
+  background-color: #444;
+  color: white;
+  width: 100%;
+  padding-bottom: 15px;
+  @include desktop {
     width: 1200px;
-    &__top {
+  }
+  &__top {
+    height: 15px;
+    @include desktop {
       width: 63.1%;
       height: 65px;
       margin: 0 auto;
       border-bottom: 1px solid #9a9a9a;
     }
-    &__nav {
+  }
+  &__nav {
+    margin: 0 auto;
+    width: 90%;
+    @include desktop {
       width: 63.1%;
       height: 140px;
       &-frame {
@@ -64,7 +28,17 @@
         margin: 0 auto;
         margin-top: 49px;
       }
-      &-item {
+    }
+    &-item {
+      color: #bbb;
+      text-decoration: none;
+      display: flex;
+      margin: 20px 0;
+      &:hover {
+        color: white;
+      }
+      @include desktop {
+        font-size: 17px;
         width: 118px;
         height: 26px;
         margin: 0;
@@ -75,12 +49,15 @@
           margin-right: 0;
         }
       }
-      &-item p {
-        display: table-cell;
-        font-size: 17px;
-      }
     }
-    &__bottom {
+  }
+  &__bottom {
+    margin: 0 auto;
+    border-top: 1px solid #9a9a9a;
+    width: 90%;
+    padding: 20px 0;
+    margin-bottom: 0;
+    @include desktop {
       width: 63.1%;
       height: 90px;
       padding: 0;
@@ -91,7 +68,16 @@
         margin: 0 auto;
         margin-top: 25px;
       }
-      &-toplink {
+    }
+    &-toplink {
+      font-size: 13px;
+      color: #bbb;
+      text-decoration: none;
+      width: 90%;
+      &:hover {
+        color: #fff;
+      }
+      @include desktop {
         width: auto;
       }
     }

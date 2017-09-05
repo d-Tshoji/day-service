@@ -29,16 +29,26 @@
   &__logo {
     font-weight: bold;
     font-size: 15px;
-    padding: 8px;
-    cursor: default;
+    padding: 13px;
+    margin-top: 15px;
     @include desktop {
       font-size: 27px;
-      padding: 0;
+      padding: 10px 0 0 0;
       width: 50%;
       text-align: center;
       margin-top: 20px;
     }
   }
+  &-titlelogo {
+    &:link {
+      color: #000;
+      text-decoration: none;
+    }
+    &:visited {
+      color: #000;
+    }
+  }
+  
   &__nav {
     display: block;
     width: 200px;

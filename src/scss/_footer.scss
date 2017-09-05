@@ -1,110 +1,84 @@
 // _footer.scss
-
-/*sp*/
-
-@include tablet {
-  .footer {
-    background-color: #444;
-    width: 100%;
-    padding-bottom: 15px;
-    color: white;
-    &__top {
-      height: 15px;
-    }
-    &__nav {
-      width: 90%;
-      margin: 0 auto;
-      &-item {
-        display: flex;
-        color: #bbb;
-        margin: 20px 0;
-        text-decoration: none;
-        &:hover {
-          color: white;
-        }
-      }
-    }
-    &__bottom {
-      width: 90%;
-      margin: 0 auto;
-      margin-bottom: 0;
-      padding: 20px 0;
-      border-top: 1px solid #9a9a9a;
-      &-toplink {
-        text-decoration: none;
-      }
-      &-toplink p {
-        width: 90%;
-        font-size: 13px;
-        color: #bbb;
-        &:hover {
-          color: white;
-        }
-      }
-    }
-  }
-}
-
-
-/*wide*/
-
-@include desktop {
-  .footer {
-    background-color: #444;
+.footer {
+  background-color: #444;
+  color: white;
+  width: 100%;
+  padding-bottom: 15px;
+  @include desktop {
     width: 1200px;
-    color: white;
-    &__top {
+  }
+  &__top {
+    height: 15px;
+    @include desktop {
       width: 63.1%;
       height: 65px;
       margin: 0 auto;
       border-bottom: 1px solid #9a9a9a;
     }
-    &__nav {
+  }
+  &__nav {
+    margin: 0 auto;
+    width: 90%;
+    @include desktop {
       width: 63.1%;
       height: 140px;
-      margin: 0 auto;
+      &-frame {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 49px;
+      }
+    }
+    &-item {
+      color: #bbb;
+      text-decoration: none;
+      display: flex;
+      margin: 20px 0;
+      &:hover {
+        color: white;
+      }
+      @include desktop {
+        font-size: 17px;
+        width: 118px;
+        height: 26px;
+        margin: 0;
+        margin-right: 11.1%;
+        padding-top: 6px;
+        white-space: nowrap;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &__bottom {
+    margin: 0 auto;
+    border-top: 1px solid #9a9a9a;
+    width: 90%;
+    padding: 20px 0;
+    margin-bottom: 0;
+    @include desktop {
+      width: 63.1%;
+      height: 90px;
+      padding: 0;
+      background-color: #444;
       &-frame {
         width: 90%;
         display: flex;
         margin: 0 auto;
-        margin-top: 49px;
-      }
-      &-item {
-        width: 118px;
-        height: 26px;
-        margin-right: 11.1%;
-        padding-top: 6px;
-        white-space: nowrap;
-        color: #bbb;
-        text-decoration: none;
-        &:last-child {
-          margin-right: 0;
-        }
-        &:hover {
-          color: white;
-        }
-      }
-      &-item p {
-        display: table-cell;
-        font-size: 17px;
+        margin-top: 25px;
       }
     }
-    &__bottom {
-      width: 63.1%;
-      height: 90px;
-      margin: 0 auto;
-      background-color: #444;
-      border-top: 1px solid #9a9a9a;
-      &-toplink {
-        text-decoration: none;
+    &-toplink {
+      font-size: 13px;
+      color: #bbb;
+      text-decoration: none;
+      width: 90%;
+      &:hover {
+        color: #fff;
       }
-      &-toplink p {
-        font-size: 13px;
-        color: #bbb;
-        margin: 37px 0 0 45px;
-        &:hover {
-          color: white;
-        }
+      @include desktop {
+        width: auto;
       }
     }
   }

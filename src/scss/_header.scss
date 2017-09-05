@@ -1,87 +1,87 @@
 // _header.scss
-
-/*sp*/
-
-@include tablet {
-  .header {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 50px;
-    margin: 0 auto;
-    margin-bottom: -15px;
-    margin-top: -15px;
-    background-color: $header-backcolor--white;
-    box-shadow: 0 9px 6px -3px rgba(0, 0, 0, 0.3);
-    &-sp-menu {
-      float: left;
-      padding: 16px;
-      font-size: 14px;
-      color: #666;
-      cursor: pointer;
-    }
-    &__logo {
-      font-size: 15px;
-      padding: 8px;
-      font-weight: bold;
-    }
-    &__nav {
-      display: block;
-      width: 200px;
-      height: 100%;
-      position: fixed;
-      background-color: #c30d23;
-      transform: scaleX(0);
-      transition: .3s;
-      transform-origin: left;
-      .nav-item {
-        display: flex;
-        color: #fff;
-        margin: 20px 15px;
-        text-decoration: none;
-        &:hover {
-          color: #000;
-          background-color: $header-backcolor--white;
-        }
-      }
-    }
-    .active {
-      transform: scaleX(1);
-    }
-  }
-}
-
-
-/*wide*/
-
+.header {
+  position: relative;
+  z-index: 1;
+  background-color: $header-backcolor--white;
+  box-shadow: 0 9px 6px -3px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: -15px;
+  margin-top: -15px;
   @include desktop {
-  .header {
-    position: relative;
-    z-index: 1;
-    background-color: $header-backcolor--white;
     width: 1200px;
     height: 100px;
+    margin: 0;
     display: block;
-    box-shadow: 0 9px 6px -3px rgba(0, 0, 0, 0.3);
     border: 1px solid white;
-    &__logo {
+  }
+  &-sp-menu {
+    float: left;
+    padding: 16px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    @include desktop {
+      display: none;
+    }
+  }
+  &__logo {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 13px;
+    margin-top: 15px;
+    @include desktop {
       font-size: 27px;
+      padding: 10px 0 0 0;
       width: 50%;
-      font-weight: bold;
       text-align: center;
       margin-top: 20px;
     }
-    &-sp-menu {
-      display: none;
+  }
+  &-titlelogo {
+    &:link {
+      color: #000;
+      text-decoration: none;
     }
-    &__nav {
+    &:visited {
+      color: #000;
+    }
+  }
+  
+  &__nav {
+    display: block;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    background-color: #c30d23;
+    transform: scaleX(0);
+    transition: .3s;
+    transform-origin: left;
+    @include desktop {
+      display: flex;
       width: 50%;
       height: 54px;
+      position: static;
+      background-color: transparent;
       float: right;
-      display: flex;
       justify-content: center;
       white-space: nowrap;
-      .nav-item {
+      transform: none;
+      transition: none;
+    }
+    .nav-item {
+      display: flex;
+      color: #fff;
+      margin: 20px 15px;
+      text-decoration: none;
+      &:hover {
+        color: #000;
+        background-color: $header-backcolor--white;
+      }
+      @include desktop {
+        color: inherit;
+        margin: 0;
         font-size: 15px;
         font-weight: bold;
         padding: 20px 20px;
@@ -98,9 +98,12 @@
       }
     }
   }
+  .active {
+    transform: scaleX(1);
+  }
 }
 
-  @include desktop-wide {
+@include desktop-wide {
   .header {
     width: 100%;
   }

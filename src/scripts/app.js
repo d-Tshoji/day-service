@@ -2,8 +2,10 @@
 //インレイ処理
 //------------------------------------------------------------------
 $(".js-nav-burger").on('touchstart click', function () {
-  $('.js-nav').addClass('active');
-  return false;
+  setTimeout(function(){
+    $('.js-nav').addClass('active');
+    return false;
+  },400);
 });
 
 $(document).on('touchstart click', function (event) {

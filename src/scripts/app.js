@@ -3,15 +3,14 @@
 //------------------------------------------------------------------
 $(".js-nav-burger").on('touchstart click', function () {
   $('.js-nav').addClass('active');
-  event.stopPropagation();
   return false;
 });
 
-$(document).on('touchstart click', function (e) {
+$(document).on('touchstart click', function (event) {
   $('.js-nav').removeClass('active');
 });
 
-$('.js-nav').on('touchstart click', function (e) {
+$('.js-nav').on('touchstart click', function (event) {
   event.stopPropagation();
 });
 

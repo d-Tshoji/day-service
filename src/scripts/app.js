@@ -1,24 +1,23 @@
 //------------------------------------------------------------------
 //インレイ処理
 //------------------------------------------------------------------
-$(".js-nav-burger").on('touchstart click', function () {
+$('.js-nav-burger').on('click', function () {
   $('.js-nav').addClass('active');
-  event.stopPropagation();
   return false;
 });
 
-$(document).on('touchstart click', function (e) {
+$(document).on('click', function (event) {
   $('.js-nav').removeClass('active');
 });
 
-$('.js-nav').on('touchstart click', function (e) {
+$('.js-nav').on('click', function (event) {
   event.stopPropagation();
 });
 
-//----------------------------------------------------------------//
-//タブ切り替え                                                     //
-//----------------------------------------------------------------//
-$(".js-tab-trg").on("touchstart click", function () {
+//----------------------------------------------------------------
+//タブ切り替え                                                     
+//----------------------------------------------------------------
+$('.js-tab-trg').on('click', function () {
   var targetId = $(this).data('target');
 
   $('.js-tab-trg').removeClass('tab-active');

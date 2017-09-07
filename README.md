@@ -1,5 +1,9 @@
 
 # project day-servise
+
+### ホスティングURL
+- Hosting URL: https://dey-yawaragi.firebaseapp.com
+
 #### このプロジェクトのコマンド説明
 ***
 

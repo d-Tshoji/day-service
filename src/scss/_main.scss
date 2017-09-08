@@ -1,7 +1,7 @@
 .hero {
   display: flex;
   justify-content: center;
-  background: center/cover url("img/hero-img.jpg");
+  background: center/cover url("img/hero.jpg");
   text-align: center;
   padding: 80px 0;
   @include desktop() {

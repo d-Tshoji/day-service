@@ -1,0 +1,11 @@
+.section {
+  padding: 50px 0;
+  @include desktop() {
+    padding: 200px 0;
+    background-size: cover;
+    background-position: center;
+  }
+  &--no-padding {
+    padding: 0;
+  }
+}

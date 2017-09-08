@@ -27,7 +27,6 @@
 
 .title-logo {
   color: white;
-  font-family: "MS PMincho";
   font-size: 36px;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
   @include desktop {
@@ -42,7 +41,6 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   text-decoration: none;
   border-radius: 3px;
-  font-size: 14px;
   display: block;
   padding: 6px 15px;
   &:hover {
@@ -50,7 +48,6 @@
     color: #fff;
   }
   @include desktop {
-    font-size: 19px;
     display: inline;
     padding: 0;
   }

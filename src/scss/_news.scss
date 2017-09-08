@@ -12,7 +12,6 @@
   }
   &__title {
     text-align: center;
-    font-weight: bold;
     margin-bottom: 31px;
     font-size: 22px;
     @include desktop {
@@ -33,7 +32,6 @@
       margin-bottom: 40px;
     }
     &-item__tab {
-      font-size: 13px;
       display: table-cell;
       vertical-align: middle;
       border-right: 5px solid #fafafa;
@@ -46,12 +44,10 @@
       }
       @include desktop {
         border-right: 10px solid #fafafa;
-        font-weight: bold;
         height: 45px;
       }
     }
     .tab-active {
-      font-weight: bold;
       background-color: #c30d23;
       color: #fff;
     }
@@ -100,9 +96,7 @@
       }
       &-day {
         margin-top: 0;
-        font-size: 15px;
         color: #6d6d6d;
-        font-weight: bold;
         margin-right: 5px;
       }
       &-announce p {
@@ -110,26 +104,20 @@
         background-color: #c30d23;
         border-radius: 6px;
         color: white;
-        font-weight: bold;
         text-align: center;
-        font-size: 13px;
         width: 70px;
         @include desktop {
-          font-size: 15px;
           width: auto;
         }
       }
     }
     &-article {
       color: #95989a;
-      font-weight: bold;
-      font-size: 17px;
       margin-top: 0;
       width: 85%;
       line-height: 1.5em;
       float: right;
       @include desktop {
-        font-size: 18px;
         padding: 13px 0 13px 15px;
         width: 700px;
         height: 51px;

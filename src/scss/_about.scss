@@ -9,16 +9,15 @@
   }
   @include desktop() {
     display: flex;
-    height: 300px;
-    align-items: center;
+    align-items: stretch;
     &__image {
-      height: 100%;
+      height: auto;
       width: 50%;
     }
     &__contents {
       flex: 1;
       order: -1;
-      padding: 0 100px;
+      padding: 50px 100px;
     }
   }
 }

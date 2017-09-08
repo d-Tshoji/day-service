@@ -1,111 +1,55 @@
-// _header.scss
 .header {
+  box-shadow: 0 0 10px #333;
   position: relative;
-  z-index: 1;
-  background-color: $header-backcolor--white;
-  box-shadow: 0 9px 6px -3px rgba(0, 0, 0, 0.3);
-  width: 100%;
-  height: 50px;
-  margin: 0 auto;
-  margin-bottom: -15px;
-  margin-top: -15px;
-  @include desktop {
-    width: 1200px;
-    height: 100px;
-    margin: 0;
-    display: block;
-    border: 1px solid white;
+  z-index: 10;
+  background: #fff;
+  &__row {
+    display: flex;
+    @include desktop() {
+      justify-content: space-between;
+    }
   }
-  &-sp-menu {
-    float: left;
-    padding: 16px;
-    font-size: 14px;
-    color: #666;
-    cursor: pointer;
-    @include desktop {
-      display: none;
+  &__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .3s;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #fff;
+    width: 150px;
+    height: 100%;
+    box-shadow: 0 0 10px #333;
+    &.active {
+      transform: scaleX(1);
+    }
+    &-item {
+      display: block;
+      padding: 15px;
+    }
+    @include desktop() {
+      line-height: 60px;
+      display: flex;
+      position: static;
+      box-shadow: none;
+      width: auto;
+      height: auto;
+      transform: none;
+      &-item {
+        padding: 0 15px;
+      }
     }
   }
   &__logo {
-    font-weight: bold;
-    font-size: 15px;
-    padding: 13px;
-    margin-top: 15px;
-    color: aqua;
-    @include desktop {
-      font-size: 27px;
-      padding: 10px 0 0 0;
-      width: 50%;
-      text-align: center;
-      margin-top: 20px;
-    }
+    line-height: 60px;
+    font-size: 18px;
   }
-  &-titlelogo {
-    &:link {
-      color: #000;
-      text-decoration: none;
+  &__menu-icon {
+    line-height: 60px;
+    padding: 0 20px;
+    margin-left: -15px;
+    @include desktop() {
+      display: none;
     }
-    &:visited {
-      color: #000;
-    }
-  }
-  
-  &__nav {
-    display: block;
-    width: 200px;
-    height: 100%;
-    position: fixed;
-    background-color: #c30d23;
-    transform: scaleX(0);
-    transition: .3s;
-    transform-origin: left;
-    @include desktop {
-      display: flex;
-      width: 50%;
-      height: 54px;
-      position: static;
-      background-color: transparent;
-      float: right;
-      justify-content: center;
-      white-space: nowrap;
-      transform: none;
-      transition: none;
-    }
-    .nav-item {
-      display: flex;
-      color: #fff;
-      margin: 20px 15px;
-      text-decoration: none;
-      &:hover {
-        color: #000;
-        background-color: $header-backcolor--white;
-      }
-      @include desktop {
-        color: inherit;
-        margin: 0;
-        font-size: 15px;
-        font-weight: bold;
-        padding: 20px 20px;
-        &:link {
-          color: #878787;
-          text-decoration: none;
-        }
-        &:visited {
-          color: #878787;
-        }
-        &:hover {
-          color: #5791fb;
-        }
-      }
-    }
-  }
-  .active {
-    transform: scaleX(1);
-  }
-}
-
-@include desktop-wide {
-  .header {
-    width: 100%;
   }
 }

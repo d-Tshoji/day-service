@@ -1,63 +1,39 @@
-// _main.scss
 .hero {
   display: flex;
   justify-content: center;
-  background-image: url("img/hero-img.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
+  background: center/cover url("img/hero.jpg");
+  text-align: center;
   padding: 80px 0;
-  background-position: 60%;
-  &__content {
-    text-align: center;
-  }
-  @include desktop {
-    width: 1200px;
-    padding: 466px 0;
-    background-position: 70%;
-    margin: 0;
-    .btn--info {
-      padding: 12px 74px;
-    }
-    .btn--document {
-      padding: 12px 87px;
-    }
+  @include desktop() {
+    padding: 120px 0;
   }
 }
 
 .title-logo {
   color: white;
-  font-family: "MS PMincho";
-  font-size: 36px;
-  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
-  @include desktop {
-    font-size: 100px;
+  font-size: 30px;
+  font-weight: normal;
+  @include desktop() {
+    font-size: 40px;
   }
 }
 
 .btn {
-  margin: 20px;
   background-color: #facb32;
   color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   text-decoration: none;
   border-radius: 3px;
-  font-size: 14px;
-  display: block;
-  padding: 6px 15px;
+  display: inline-block;
+  padding: 20px 30px;
   &:hover {
     background-color: #fabe00;
     color: #fff;
   }
-  @include desktop {
-    font-size: 19px;
-    display: inline;
-    padding: 0;
+  & + & {
+    margin-left: 20px;
   }
-}
-
-@include desktop-wide {
-  .hero {
-    width: 100%;
+  &--document {
+    background: #666;
   }
 }

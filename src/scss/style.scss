@@ -1,14 +1,23 @@
-// _style.scss
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 @import "variable";
 @import "mixin";
+
 body {
   margin: 0;
-  font-family: "Noto Sans", "sans-serif";
+  font-family: 'Noto Sans JP', sans-serif;
   overflow-x: hidden;
+  color: #333333;
+  font-size: 13px;
+  background-color: #fafafa;
 }
 
 p {
   line-height: 2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -18,6 +27,16 @@ ul {
 
 .br {
   display: block;
+  @include desktop {
+    display: inline;
+  }
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 @import "header";

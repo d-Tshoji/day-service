@@ -1,46 +1,49 @@
 extend _base
 
 block content
-  hero.hero
+  section.hero
     .hero__content
-      h2.title-logo いつもと違う<span class="br">いつもの毎日へ</span>
+      h2.title-logo This is Training.</span>
       .hero__buttons
-        a(href="").btn.btn--info お問い合わせ
-        a(href="").btn.btn--document 請求資料
+        a(href="").btn.btn--info Contact
+        a(href="").btn.btn--document Sub Action
 
-  .news
-    h2.news__title 新着情報
-    nav.news__tab
-      .news__tab-item__tab.js-tab-trg(data-target="a").tab-active すべて
-      .news__tab-item__tab.js-tab-trg(data-target="b") 新着情報
-      .news__tab-item__tab.js-tab-trg(data-target="c") トピック
+  section.news.container
+    h2.news__title News
+    nav.tab
+      .tab__item.js-tab-trg(data-target="a").tab__item--active Tab1
+      .tab__item.js-tab-trg(data-target="b") Tab2
+      .tab__item.js-tab-trg(data-target="c") Tab3
 
-    .news__contents.js-tab-content.js-tab-content--a.contents-active
-      - var i = 5
-      while i--
-        .news__contents-frame
-          .news__contents-item
-            p.news__contents-item-day 2017.06.11
-            .news__contents-item-announce: p お知らせ
-          p.news__contents-article 内覧会･体験会｢6月15日(土)｣まずはお電話でご予約ください！！<span class="br">電話:1234-567-890</span>
-    .news__contents.js-tab-content.js-tab-content--b
-      - var i = 3
-      while i--
-        .news__contents-frame
-            .news__contents-item
-              p.news__contents-item-day 2017.06.11
-              .news__contents-item-announce: p 新着
-            p.news__contents-article 今週の催し物は流しそうめんになりました。
-    .news__contents.js-tab-content.js-tab-content--c
-      - var i = 3
-      while i--
-        .news__contents-frame
-            .news__contents-item
-              p.news__contents-item-day 2017.06.11
-              .news__contents-item-announce: p トピック
-            p.news__contents-article ご利用中の須吾谷さんが散歩中に新種の虫を発見しました！
-  .about
+    .tab-content.js-tab-content.js-tab-content--a.tab-content--active
+      .news-wrapper
+        - var i = 5
+        while i--
+          .news-item
+            .news-item__header
+              time.news-item__date 2017.06.11
+              span.news-item__label Label A
+            p.news-item__text Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    .tab-content.js-tab-content.js-tab-content--b
+      .news-wrapper
+        - var i = 3
+        while i--
+          .news-item
+            .news-item__header
+              time.news-item__date 2017.06.11
+              span.news-item__label Label B
+            p.news-item__text Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    .tab-content.js-tab-content.js-tab-content--c
+      .news-wrapper
+        - var i = 3
+        while i--
+          .news-item
+            .news-item__header
+              time.news-item__date 2017.06.11
+              span.news-item__label Label C
+            p.news-item__text Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+  section.about
     .about__image
     .about__contents
-      h2.about__heading 和らぎの庭
-      p.about__text ここ｢和らぎの庭｣は小さなデイサービスではありますが介護が必要になっても、家族や親しい人々と共に不安の無い生活を送りたいと言う高齢者の方々の願いに応える為「自分の力を」尊重しつつ、みなさまのサポートをいたします。
+      h2.about__heading Title
+      p.about__text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates incidunt dicta numquam architecto eius necessitatibus laborum vero excepturi culpa natus placeat est quae quia eum fugiat distinctio doloremque, ducimus in?

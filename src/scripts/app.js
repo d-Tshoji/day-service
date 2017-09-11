@@ -6,11 +6,11 @@ $('.js-nav-burger').on('click', function () {
   return false;
 });
 
-$(document).on('click', function (event) {
+$(document).on('click touchstart', function (event) {
   $('.js-nav').removeClass('active');
 });
 
-$('.js-nav').on('click', function (event) {
+$('.js-nav').on('click touchstart', function (event) {
   event.stopPropagation();
 });
 

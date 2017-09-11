@@ -1,8 +1,8 @@
 .facility-map {
+  width: 100%;
   margin-top: 50px;
   height: 150px;
   @include desktop() {
-    width: 100%;
     vertical-align: bottom;
     height: 300px;
     pointer-events: none;

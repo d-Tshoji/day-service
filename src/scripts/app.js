@@ -22,7 +22,7 @@ $('.js-tab-trg').on('click', function () {
 
   $('.js-tab-trg').removeClass('tab__item--active');
   $(this).addClass('tab__item--active');
-  $('.js-tab-content').removeClass('contents--active');
-  $('.js-tab-content--' + targetId).addClass('contents--active');
+  $('.js-tab-content').removeClass('tab-content--active');
+  $('.js-tab-content--' + targetId).addClass('tab-content--active');
   return false;
 });

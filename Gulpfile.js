@@ -5,6 +5,9 @@ var sass = require('gulp-sass');
 var pug = require('gulp-pug');
 var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync').create();
+var pngquant = require('imagemin-pngquant');
+var mozjpeg  = require('imagemin-mozjpeg');
+
 
 gulp.task('serve', function() {
     browserSync.init({
@@ -30,7 +33,12 @@ gulp.task('pug', function () {
 
 gulp.task('imagemin', function () {
   return gulp.src('src/img/**/*')
-    .pipe(imagemin())
+    .pipe(imagemin([
+      pngquant({ quality: '65-80', speed: 1 }),
+      mozjpeg({ quality: 80 }),
+      imagemin.svgo(),
+      imagemin.gifsicle()
+    ]))
     .pipe(gulp.dest('dist/img'))
 });
 
